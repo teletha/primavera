@@ -327,6 +327,13 @@ const root = {
 		{
 			"modifiers": {
 				"#": "java.util.Collections$UnmodifiableSet",},
+			"name": "RingBuffer",
+			"packageName": "primavera.ring",
+			"type": "Class"
+		},
+		{
+			"modifiers": {
+				"#": "java.util.Collections$UnmodifiableSet",},
 			"name": "SortedDoubleSet",
 			"packageName": "primavera.set",
 			"type": "Interface"
