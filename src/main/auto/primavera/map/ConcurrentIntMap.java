@@ -25,7 +25,7 @@ public interface ConcurrentIntMap<V> extends ConcurrentMap<Integer, V>, IntMap<V
      */
     @Override
     default V getOrDefault(Object key, V defaultValue) {
-        return getOrDefault(key, defaultValue);
+        return getOrDefault((int) key, defaultValue);
     }
 
     /**
@@ -89,7 +89,7 @@ public interface ConcurrentIntMap<V> extends ConcurrentMap<Integer, V>, IntMap<V
      */
     @Override
     default boolean remove(Object key, Object value) {
-        return remove(key, value);
+        return remove((int) key, value);
     }
 
     /**

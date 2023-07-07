@@ -25,7 +25,7 @@ public interface ConcurrentDoubleMap<V> extends ConcurrentMap<Double, V>, Double
      */
     @Override
     default V getOrDefault(Object key, V defaultValue) {
-        return getOrDefault(key, defaultValue);
+        return getOrDefault((double) key, defaultValue);
     }
 
     /**
@@ -89,7 +89,7 @@ public interface ConcurrentDoubleMap<V> extends ConcurrentMap<Double, V>, Double
      */
     @Override
     default boolean remove(Object key, Object value) {
-        return remove(key, value);
+        return remove((double) key, value);
     }
 
     /**

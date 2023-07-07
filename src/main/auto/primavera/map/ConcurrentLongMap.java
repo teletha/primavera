@@ -25,7 +25,7 @@ public interface ConcurrentLongMap<V> extends ConcurrentMap<Long, V>, LongMap<V>
      */
     @Override
     default V getOrDefault(Object key, V defaultValue) {
-        return getOrDefault(key, defaultValue);
+        return getOrDefault((long) key, defaultValue);
     }
 
     /**
@@ -89,7 +89,7 @@ public interface ConcurrentLongMap<V> extends ConcurrentMap<Long, V>, LongMap<V>
      */
     @Override
     default boolean remove(Object key, Object value) {
-        return remove(key, value);
+        return remove((long) key, value);
     }
 
     /**

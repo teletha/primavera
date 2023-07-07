@@ -27,7 +27,7 @@ public interface ConcurrentWrapperMap<V> extends ConcurrentMap<Wrapper, V>, Wrap
      */
     @Override
     default V getOrDefault(Object key, V defaultValue) {
-        return getOrDefault(key, defaultValue);
+        return getOrDefault((Primitive) key, defaultValue);
     }
 
     /**
@@ -91,7 +91,7 @@ public interface ConcurrentWrapperMap<V> extends ConcurrentMap<Wrapper, V>, Wrap
      */
     @Override
     default boolean remove(Object key, Object value) {
-        return remove(key, value);
+        return remove((Primitive) key, value);
     }
 
     /**
