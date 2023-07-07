@@ -10,11 +10,14 @@
  */
 import static bee.api.License.MIT;
 
+import javax.lang.model.SourceVersion;
+
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "primavera", "1.0");
+        product("com.github.teletha", "primavera", ref("version.txt"));
         license(MIT);
         versionControlSystem("https://github.com/teletha/primavera");
+        require(SourceVersion.RELEASE_19, SourceVersion.RELEASE_17);
         describe("""
                 Specialized primitive collections.
                 """);
