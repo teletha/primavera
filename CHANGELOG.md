@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/teletha/primavera/compare/v1.1.0...v1.1.1) (2024-01-01)
+
+
+### Bug Fixes
+
+* update license ([5707c4a](https://github.com/teletha/primavera/commit/5707c4a9b200a1ff654496009e30c7a6e732d18d))
+
 ## [1.1.0](https://github.com/teletha/primavera/compare/v1.0.0...v1.1.0) (2023-07-07)
 
 
