@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Explains how to use Primavera and its API. " name="description"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="d">
-			<h1 class="W" date="Use saved searches to filter your results more quickly" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="h"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="j">
+		<header class="Y">
+			<h1 class="b" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
+			<nav class="J"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
 					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#user"/>
@@ -19,7 +23,7 @@
 					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#github"/>
 					</svg>Repository</a></nav>
-			<div class="I" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
+			<div class="M" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#sun"/>
 					</svg>
 				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
@@ -28,13 +32,13 @@
 				</a></div>
 		</header>
 		<main class="K">
-			<nav class="V">
+			<nav class="d">
 				<div></div>
 			</nav>
-			<article class="S" id="Article">
-				<section class="U"><code class="X">primavera.set</code>
-					<h2 class="Interface H"><code class="Q">LongSet</code></h2>
-					<div class="k">
+			<article class="I" id="Article">
+				<section class="O"><code class="c">primavera.set</code>
+					<h2 class="Interface R"><code class="i">LongSet</code></h2>
+					<div class="Z">
 						<ul class="C F">
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code></code></code></li>
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code></code></code></li>
@@ -46,143 +50,142 @@
 						</ul>
 					</div>
 				</section>
-				<section class="U" id="add(java.lang.Long)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">add</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code> <code class="parameterName">e</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="add(java.lang.Long)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">add</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code> <code class="parameterName">e</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code> <code>e</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="add(long)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">add</code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="add(long)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">add</code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>long</code> <code>value</code></td>
 							<td><span><p>element to be added to this set</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td><span><code>true</code> if this set did not already contain the specified element</span></td>
 						</tr>
 					</table><span class="B"><p>Adds the specified element to this set if it is not already present (optional operation).
- More formally, adds the specified element <code>e</code> to this set if the set contains no
- element <code>e2</code> such that <code>Objects.equals(e, e2)</code>. If this set already contains the
- element, the call leaves the set unchanged and returns <code>false</code>. In combination with the
- restriction on constructors, this ensures that sets never contain duplicate elements.
- 
-							<p>
+More formally, adds the specified element <code>e</code> to this set if the set contains no
+element <code>e2</code> such that <code>Objects.equals(e, e2)</code>. If this set already contains the
+element, the call leaves the set unchanged and returns <code>false</code>. In combination with the
+restriction on constructors, this ensures that sets never contain duplicate elements.</p>
+ <p>
  The stipulation above does not imply that sets must accept all elements; sets may refuse to
  add any particular element, including <code>null</code>, and throw an exception, as described in
  the specification for <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html#add">Collection#add</a></code>. Individual set implementations
- should clearly document any restrictions on the elements that they may contain.</p>
-						</p>
+ should clearly document any restrictions on the elements that they may contain.
+</p>
 					</span></section>
-				<section class="U" id="remove(java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">remove</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="remove(java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">remove</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code>o</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="remove(long)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">remove</code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="remove(long)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">remove</code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>long</code> <code>value</code></td>
 							<td><span><p>object to be removed from this set, if present</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td><span><code>true</code> if this set contained the specified element</span></td>
 						</tr>
 					</table><span class="B"><p>Removes the specified element from this set if it is present (optional operation). More
- formally, removes an element <code>e</code> such that <code>Objects.equals(o, e)</code>, if this set
- contains such an element. Returns <code>true</code> if this set contained the element (or
- equivalently, if this set changed as a result of the call). (This set will not contain the
- element once the call returns.)</p>
-					</span></section>
-				<section class="U" id="contains(java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">contains</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+formally, removes an element <code>e</code> such that <code>Objects.equals(o, e)</code>, if this set
+contains such an element. Returns <code>true</code> if this set contained the element (or
+equivalently, if this set changed as a result of the call). (This set will not contain the
+element once the call returns.)</p>
+</span></section>
+				<section class="O" id="contains(java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">contains</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code>o</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="contains(long)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">contains</code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="contains(long)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">contains</code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>long</code> <code>value</code></td>
 							<td><span><p>element whose presence in this set is to be tested</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td><span><code>true</code> if this set contains the specified element</span></td>
 						</tr>
 					</table><span class="B"><p>Returns <code>true</code> if this set contains the specified element. More formally, returns
- <code>true</code> if and only if this set contains an element <code>e</code> such that
- <code>Objects.equals(o, e)</code>.</p>
-					</span></section>
-				<section class="U" id="toArray()">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">toArray</code><code class="J">()</code><i class="Y"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></h2>
-					<table class="c">
-						<tr class="g">
+<code>true</code> if and only if this set contains an element <code>e</code> such that
+<code>Objects.equals(o, e)</code>.</p>
+</span></section>
+				<section class="O" id="toArray()">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">toArray</code><code class="S">()</code><i class="f"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="toArray(java.lang.Object[])">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">toArray</code><code class="J">(<code array="fix">T</code> <code class="parameterName">a</code>)</code><i class="Y"><code array="fix">T</code></i></h2>
-					<table class="c">
-						<tr class="i">
+				<section class="O" id="toArray(java.lang.Object[])">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">toArray</code><code class="S">(<code array="fix">T</code> <code class="parameterName">a</code>)</code><i class="f"><code array="fix">T</code></i></h2>
+					<table class="W">
+						<tr class="X">
 							<td><code>T</code></td>
 							<td></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code array="fix">T</code> <code>a</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code array="fix">T</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
 			</article>
-			<aside class="a" id="SubNavi">
-				<div class="e">
-					<h5 class="P">Methods</h5>
+			<aside class="H" id="SubNavi">
+				<div class="L">
+					<h5 class="g">Methods</h5>
 					<ul>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#add(java.lang.Long)">add</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code> <code class="parameterName">e</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#add(long)">add</a></code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#remove(java.lang.Object)">remove</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#remove(long)">remove</a></code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#contains(java.lang.Object)">contains</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#contains(long)">contains</a></code><code class="J">(<code>long</code> <code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#toArray()">toArray</a></code><code class="J">()</code><i class="M"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#toArray(java.lang.Object[])">toArray</a></code><code class="J">(<code array="fix">T</code> <code class="parameterName">a</code>)</code><i class="M"><code array="fix">T</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#add(java.lang.Long)">add</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code> <code class="parameterName">e</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#add(long)">add</a></code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#remove(java.lang.Object)">remove</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#remove(long)">remove</a></code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#contains(java.lang.Object)">contains</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">o</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#contains(long)">contains</a></code><code class="S">(<code>long</code> <code class="parameterName">value</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#toArray()">toArray</a></code><code class="S">()</code><i class="T"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.LongSet.html#toArray(java.lang.Object[])">toArray</a></code><code class="S">(<code array="fix">T</code> <code class="parameterName">a</code>)</code><i class="T"><code array="fix">T</code></i></li>
 					</ul>
 				</div>
 			</aside>

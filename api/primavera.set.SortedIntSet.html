@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Explains how to use Primavera and its API. " name="description"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="d">
-			<h1 class="W" date="Use saved searches to filter your results more quickly" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="h"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="j">
+		<header class="Y">
+			<h1 class="b" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
+			<nav class="J"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
 					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#user"/>
@@ -19,7 +23,7 @@
 					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#github"/>
 					</svg>Repository</a></nav>
-			<div class="I" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
+			<div class="M" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#sun"/>
 					</svg>
 				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
@@ -28,17 +32,19 @@
 				</a></div>
 		</header>
 		<main class="K">
-			<nav class="V">
+			<nav class="d">
 				<div></div>
 			</nav>
-			<article class="S" id="Article">
-				<section class="U"><code class="X">primavera.set</code>
-					<h2 class="Interface H"><code class="Q">SortedIntSet</code></h2>
-					<div class="k">
+			<article class="I" id="Article">
+				<section class="O"><code class="c">primavera.set</code>
+					<h2 class="Interface R"><code class="i">SortedIntSet</code></h2>
+					<div class="Z">
 						<ul class="C F">
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
 							<li><code><a href="api/primavera.set.IntSet.html">IntSet</a></code></li>
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
+							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SequencedCollection.html">SequencedCollection</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
+							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SequencedSet.html">SequencedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
 							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></li>
 						</ul>
@@ -47,180 +53,177 @@
 						</ul>
 					</div>
 				</section>
-				<section class="U" id="subSet(java.lang.Integer,java.lang.Integer)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">subSet</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="subSet(java.lang.Integer,java.lang.Integer)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">subSet</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code>fromElement</code></td>
 							<td></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code>toElement</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="subSet(int,int)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">subSet</code><code class="J">(<code>int</code> <code class="parameterName">fromElement</code>, <code>int</code> <code class="parameterName">toElement</code>)</code><i class="Y"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="subSet(int,int)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">subSet</code><code class="S">(<code>int</code> <code class="parameterName">fromElement</code>, <code>int</code> <code class="parameterName">toElement</code>)</code><i class="f"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>int</code> <code>fromElement</code></td>
 							<td><span><p>low endpoint (inclusive) of the returned set</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code>int</code> <code>toElement</code></td>
 							<td><span><p>high endpoint (exclusive) of the returned set</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></td>
 							<td><span><p>a view of the portion of this set whose elements range from <code>fromElement</code>,
-         inclusive, to <code>toElement</code>, exclusive</p>
-								</span></td>
+inclusive, to <code>toElement</code>, exclusive</p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns a view of the portion of this set whose elements range from <code>fromElement</code>,
- inclusive, to <code>toElement</code>, exclusive. (If <code>fromElement</code> and <code>toElement</code> are
- equal, the returned set is empty.) The returned set is backed by this set, so changes in the
- returned set are reflected in this set, and vice-versa. The returned set supports all
- optional set operations that this set supports.
- 
-							<p>
+inclusive, to <code>toElement</code>, exclusive. (If <code>fromElement</code> and <code>toElement</code> are
+equal, the returned set is empty.) The returned set is backed by this set, so changes in the
+returned set are reflected in this set, and vice-versa. The returned set supports all
+optional set operations that this set supports.</p>
+ <p>
  The returned set will throw an <code>IllegalArgumentException</code> on an attempt to insert an
- element outside its range.</p>
-						</p>
+ element outside its range.
+</p>
 					</span></section>
-				<section class="U" id="headSet(java.lang.Integer)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">headSet</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="headSet(java.lang.Integer)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">headSet</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code>toElement</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="headSet(int)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">headSet</code><code class="J">(<code>int</code> <code class="parameterName">toElement</code>)</code><i class="Y"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="headSet(int)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">headSet</code><code class="S">(<code>int</code> <code class="parameterName">toElement</code>)</code><i class="f"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>int</code> <code>toElement</code></td>
 							<td><span><p>high endpoint (exclusive) of the returned set</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></td>
 							<td><span><p>a view of the portion of this set whose elements are strictly less than
-         <code>toElement</code></p>
-								</span></td>
+<code>toElement</code></p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns a view of the portion of this set whose elements are strictly less than
- <code>toElement</code>. The returned set is backed by this set, so changes in the returned set are
- reflected in this set, and vice-versa. The returned set supports all optional set operations
- that this set supports.
- 
-							<p>
+<code>toElement</code>. The returned set is backed by this set, so changes in the returned set are
+reflected in this set, and vice-versa. The returned set supports all optional set operations
+that this set supports.</p>
+ <p>
  The returned set will throw an <code>IllegalArgumentException</code> on an attempt to insert an
- element outside its range.</p>
-						</p>
+ element outside its range.
+</p>
 					</span></section>
-				<section class="U" id="tailSet(java.lang.Integer)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">tailSet</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>)</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="tailSet(java.lang.Integer)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">tailSet</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>)</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code>fromElement</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="tailSet(int)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">tailSet</code><code class="J">(<code>int</code> <code class="parameterName">fromElement</code>)</code><i class="Y"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="tailSet(int)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">tailSet</code><code class="S">(<code>int</code> <code class="parameterName">fromElement</code>)</code><i class="f"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>int</code> <code>fromElement</code></td>
 							<td><span><p>low endpoint (inclusive) of the returned set</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></td>
 							<td><span><p>a view of the portion of this set whose elements are greater than or equal to
-         <code>fromElement</code></p>
-								</span></td>
+<code>fromElement</code></p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns a view of the portion of this set whose elements are greater than or equal to
- <code>fromElement</code>. The returned set is backed by this set, so changes in the returned set
- are reflected in this set, and vice-versa. The returned set supports all optional set
- operations that this set supports.
- 
-							<p>
+<code>fromElement</code>. The returned set is backed by this set, so changes in the returned set
+are reflected in this set, and vice-versa. The returned set supports all optional set
+operations that this set supports.</p>
+ <p>
  The returned set will throw an <code>IllegalArgumentException</code> on an attempt to insert an
- element outside its range.</p>
-						</p>
+ element outside its range.
+</p>
 					</span></section>
-				<section class="U" id="first()">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">first</code><code class="J">()</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></h2>
-					<table class="c">
-						<tr class="g">
+				<section class="O" id="first()">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">first</code><code class="S">()</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="firstInt()">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">firstInt</code><code class="J">()</code><i class="Y"><code>int</code></i></h2>
-					<table class="c">
-						<tr class="g">
+				<section class="O" id="firstInt()">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">firstInt</code><code class="S">()</code><i class="f"><code>int</code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code>int</code></td>
 							<td><span><p>the first (lowest) element currently in this set</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns the first (lowest) element currently in this set.</p>
-					</span></section>
-				<section class="U" id="last()">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">last</code><code class="J">()</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></h2>
-					<table class="c">
-						<tr class="g">
+</span></section>
+				<section class="O" id="last()">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">last</code><code class="S">()</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="lastInt()">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">lastInt</code><code class="J">()</code><i class="Y"><code>int</code></i></h2>
-					<table class="c">
-						<tr class="g">
+				<section class="O" id="lastInt()">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">lastInt</code><code class="S">()</code><i class="f"><code>int</code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code>int</code></td>
 							<td><span><p>the last (highest) element currently in this set</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns the last (highest) element currently in this set.</p>
-					</span></section>
+</span></section>
 			</article>
-			<aside class="a" id="SubNavi">
-				<div class="e">
-					<h5 class="P">Methods</h5>
+			<aside class="H" id="SubNavi">
+				<div class="L">
+					<h5 class="g">Methods</h5>
 					<ul>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#subSet(java.lang.Integer,java.lang.Integer)">subSet</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#subSet(int,int)">subSet</a></code><code class="J">(<code>int</code> <code class="parameterName">fromElement</code>, <code>int</code> <code class="parameterName">toElement</code>)</code><i class="M"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#headSet(java.lang.Integer)">headSet</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#headSet(int)">headSet</a></code><code class="J">(<code>int</code> <code class="parameterName">toElement</code>)</code><i class="M"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#tailSet(java.lang.Integer)">tailSet</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>)</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#tailSet(int)">tailSet</a></code><code class="J">(<code>int</code> <code class="parameterName">fromElement</code>)</code><i class="M"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#first()">first</a></code><code class="J">()</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#firstInt()">firstInt</a></code><code class="J">()</code><i class="M"><code>int</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#last()">last</a></code><code class="J">()</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#lastInt()">lastInt</a></code><code class="J">()</code><i class="M"><code>int</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#subSet(java.lang.Integer,java.lang.Integer)">subSet</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#subSet(int,int)">subSet</a></code><code class="S">(<code>int</code> <code class="parameterName">fromElement</code>, <code>int</code> <code class="parameterName">toElement</code>)</code><i class="T"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#headSet(java.lang.Integer)">headSet</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">toElement</code>)</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#headSet(int)">headSet</a></code><code class="S">(<code>int</code> <code class="parameterName">toElement</code>)</code><i class="T"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#tailSet(java.lang.Integer)">tailSet</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code> <code class="parameterName">fromElement</code>)</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedSet.html">SortedSet</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></code></code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#tailSet(int)">tailSet</a></code><code class="S">(<code>int</code> <code class="parameterName">fromElement</code>)</code><i class="T"><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#first()">first</a></code><code class="S">()</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#firstInt()">firstInt</a></code><code class="S">()</code><i class="T"><code>int</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#last()">last</a></code><code class="S">()</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.SortedIntSet.html#lastInt()">lastInt</a></code><code class="S">()</code><i class="T"><code>int</code></i></li>
 					</ul>
 				</div>
 			</aside>

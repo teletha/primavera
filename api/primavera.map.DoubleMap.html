@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Explains how to use Primavera and its API. " name="description"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="d">
-			<h1 class="W" date="Use saved searches to filter your results more quickly" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="h"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="j">
+		<header class="Y">
+			<h1 class="b" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
+			<nav class="J"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
 					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#user"/>
@@ -19,7 +23,7 @@
 					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#github"/>
 					</svg>Repository</a></nav>
-			<div class="I" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
+			<div class="M" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
 						<use href="main.svg#sun"/>
 					</svg>
 				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
@@ -28,13 +32,13 @@
 				</a></div>
 		</header>
 		<main class="K">
-			<nav class="V">
+			<nav class="d">
 				<div></div>
 			</nav>
-			<article class="S" id="Article">
-				<section class="U"><code class="X">primavera.map</code>
-					<h2 class="Interface H"><code class="Q">DoubleMap</code><code class="J">&#60;<code>V</code>&#62;</code></h2>
-					<div class="k">
+			<article class="I" id="Article">
+				<section class="O"><code class="c">primavera.map</code>
+					<h2 class="Interface R"><code class="i">DoubleMap</code><code class="S">&#60;<code>V</code>&#62;</code></h2>
+					<div class="Z">
 						<ul class="C D">
 							<li><code>V</code></li>
 						</ul>
@@ -46,255 +50,253 @@
 							<li><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></li>
 						</ul>
 					</div><span class="B"><p>Specialized <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Map.html">Map</a></code> interface for double key.</p>
-					</span></section>
-				<section class="U" id="containsKey(java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">containsKey</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+</span></section>
+				<section class="O" id="containsKey(java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">containsKey</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code>key</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="containsKey(double)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">containsKey</code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="Y"><code>boolean</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="containsKey(double)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">containsKey</code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="f"><code>boolean</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>double</code> <code>key</code></td>
 							<td><span><p>key whose presence in this map is to be tested</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>boolean</code></td>
 							<td><span><code>true</code> if this map contains a mapping for the specified key</span></td>
 						</tr>
 					</table><span class="B"><p>Returns <code>true</code> if this map contains a mapping for the specified key. More formally,
- returns <code>true</code> if and only if this map contains a mapping for a key <code>k</code> such that
- <code>Objects.equals(key, k)</code>. (There can be at most one such mapping.)</p>
-					</span></section>
-				<section class="U" id="get(java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">get</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+returns <code>true</code> if and only if this map contains a mapping for a key <code>k</code> such that
+<code>Objects.equals(key, k)</code>. (There can be at most one such mapping.)</p>
+</span></section>
+				<section class="O" id="get(java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">get</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code>key</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="get(double)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">get</code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="get(double)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">get</code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>double</code> <code>key</code></td>
 							<td><span><p>the key whose associated value is to be returned</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td><span><p>the value to which the specified key is mapped, or <code>null</code> if this map contains
-         no mapping for the key</p>
-								</span></td>
+no mapping for the key</p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns the value to which the specified key is mapped, or <code>null</code> if this map contains
- no mapping for the key.
- 
-							<p>
+no mapping for the key.</p>
+ <p>
  More formally, if this map contains a mapping from a key <code>k</code> to a value <code>v</code> such
  that <code>Objects.equals(key, k)</code>, then this method returns <code>v</code>; otherwise it returns
  <code>null</code>. (There can be at most one such mapping.)
  
-								<p>
+							<p>
  If this map permits null values, then a return value of <code>null</code> does not
  <i>necessarily</i> indicate that the map contains no mapping for the key; it&#39;s also possible
  that the map explicitly maps the key to <code>null</code>. The <code><a href="api/primavera.map.DoubleMap.html#containsKey">#containsKey</a></code>
- operation may be used to distinguish these two cases.</p>
-							</p>
+ operation may be used to distinguish these two cases.
+</p>
 						</p>
 					</span></section>
-				<section class="U" id="put(java.lang.Double,java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">put</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="put(java.lang.Double,java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">put</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code> <code>key</code></td>
 							<td></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code>V</code> <code>value</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="put(double,java.lang.Object)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">put</code><code class="J">(<code>double</code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="put(double,java.lang.Object)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">put</code><code class="S">(<code>double</code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>double</code> <code>key</code></td>
 							<td><span><p>key with which the specified value is to be associated</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code>V</code> <code>value</code></td>
 							<td><span><p>value to be associated with the specified key</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td><span><p>the previous value associated with <code>key</code>, or <code>null</code> if there was no
-         mapping for <code>key</code>. (A <code>null</code> return can also indicate that the map
-         previously associated <code>null</code> with <code>key</code>, if the implementation supports
-         <code>null</code> values.)</p>
-								</span></td>
+mapping for <code>key</code>. (A <code>null</code> return can also indicate that the map
+previously associated <code>null</code> with <code>key</code>, if the implementation supports
+<code>null</code> values.)</p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Associates the specified value with the specified key in this map (optional operation). If
- the map previously contained a mapping for the key, the old value is replaced by the
- specified value. (A map <code>m</code> is said to contain a mapping for a key <code>k</code> if and
- only if <code><a href="api/primavera.map.DoubleMap.html#containsKey(java.lang.Object)">#containsKey(Object)</a></code> would return <code>true</code>.)</p>
-					</span></section>
-				<section class="U" id="remove(java.lang.Object)">
-					<h2 class="R"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="Q">remove</code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+the map previously contained a mapping for the key, the old value is replaced by the
+specified value. (A map <code>m</code> is said to contain a mapping for a key <code>k</code> if and
+only if <code><a href="api/primavera.map.DoubleMap.html#containsKey(java.lang.Object)">#containsKey(Object)</a></code> would return <code>true</code>.)</p>
+</span></section>
+				<section class="O" id="remove(java.lang.Object)">
+					<h2 class="l"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="i">remove</code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code>key</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td></td>
 						</tr>
 					</table>
 				</section>
-				<section class="U" id="remove(double)">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">remove</code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="Y"><code>V</code></i></h2>
-					<table class="c">
-						<tr class="j">
+				<section class="O" id="remove(double)">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">remove</code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="f"><code>V</code></i></h2>
+					<table class="W">
+						<tr class="a">
 							<td><code>double</code> <code>key</code></td>
 							<td><span><p>key whose mapping is to be removed from the map</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code>V</code></td>
 							<td><span><p>the previous value associated with <code>key</code>, or <code>null</code> if there was no
-         mapping for <code>key</code>.</p>
-								</span></td>
+mapping for <code>key</code>.</p>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Removes the mapping for a key from this map if it is present (optional operation). More
- formally, if this map contains a mapping from key <code>k</code> to value <code>v</code> such that
- <code>Objects.equals(key, k)</code>, that mapping is removed. (The map can contain at most one
- such mapping.)
- 
-							<p>
+formally, if this map contains a mapping from key <code>k</code> to value <code>v</code> such that
+<code>Objects.equals(key, k)</code>, that mapping is removed. (The map can contain at most one
+such mapping.)</p>
+ <p>
  Returns the value to which this map previously associated the key, or <code>null</code> if the map
  contained no mapping for the key.
  
-								<p>
+							<p>
  If this map permits null values, then a return value of <code>null</code> does not
  <i>necessarily</i> indicate that the map contained no mapping for the key; it&#39;s also possible
  that the map explicitly mapped the key to <code>null</code>.
  
-									<p>
- The map will not contain a mapping for the specified key once the call returns.</p>
-								</p>
+								<p>
+ The map will not contain a mapping for the specified key once the call returns.
+</p>
 							</p>
 						</p>
 					</span></section>
-				<section class="U" id="doubleEntrySet()">
-					<h2 class="R"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="Q">doubleEntrySet</code><code class="J">()</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleEntry</a><code class="parameters"><code>V</code></code></code></code></code></i></h2>
-					<table class="c">
-						<tr class="g">
+				<section class="O" id="doubleEntrySet()">
+					<h2 class="l"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="i">doubleEntrySet</code><code class="S">()</code><i class="f"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleEntry</a><code class="parameters"><code>V</code></code></code></code></code></i></h2>
+					<table class="W">
+						<tr class="P">
 							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleEntry</a><code class="parameters"><code>V</code></code></code></code></code></td>
 							<td><span><p>a set view of the mappings contained in this map</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Returns a <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a></code> view of the mappings contained in this map. The set is backed by the
- map, so changes to the map are reflected in the set, and vice-versa. If the map is modified
- while an iteration over the set is in progress (except through the iterator&#39;s own
- <code>remove</code> operation, or through the <code>setValue</code> operation on a map entry returned
- by the iterator) the results of the iteration are undefined. The set supports element
- removal, which removes the corresponding mapping from the map, via the
- <code>Iterator.remove</code>, <code>Set.remove</code>, <code>removeAll</code>, <code>retainAll</code> and
- <code>clear</code> operations. It does not support the <code>add</code> or <code>addAll</code> operations.</p>
-					</span></section>
-				<section class="U" id="createSortedMap()">
-					<h2 class="R"><i class="STATIC PUBLIC"></i><code class="Q">createSortedMap</code><code class="J">()</code><i class="Y"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="c">
-						<tr class="i">
+map, so changes to the map are reflected in the set, and vice-versa. If the map is modified
+while an iteration over the set is in progress (except through the iterator&#39;s own
+<code>remove</code> operation, or through the <code>setValue</code> operation on a map entry returned
+by the iterator) the results of the iteration are undefined. The set supports element
+removal, which removes the corresponding mapping from the map, via the
+<code>Iterator.remove</code>, <code>Set.remove</code>, <code>removeAll</code>, <code>retainAll</code> and
+<code>clear</code> operations. It does not support the <code>add</code> or <code>addAll</code> operations.</p>
+</span></section>
+				<section class="O" id="createSortedMap()">
+					<h2 class="l"><i class="PUBLIC STATIC"></i><code class="i">createSortedMap</code><code class="S">()</code><i class="f"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+					<table class="W">
+						<tr class="X">
 							<td><code>V</code></td>
 							<td><span><p>A value type.</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></td>
 							<td><span><p>A new created map.</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Create the concurrent-safe sorted map for primitive double with natual order.</p>
-					</span></section>
-				<section class="U" id="createReversedMap()">
-					<h2 class="R"><i class="STATIC PUBLIC"></i><code class="Q">createReversedMap</code><code class="J">()</code><i class="Y"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="c">
-						<tr class="i">
+</span></section>
+				<section class="O" id="createReversedMap()">
+					<h2 class="l"><i class="PUBLIC STATIC"></i><code class="i">createReversedMap</code><code class="S">()</code><i class="f"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+					<table class="W">
+						<tr class="X">
 							<td><code>V</code></td>
 							<td><span><p>A value type.</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></td>
 							<td><span><p>A new created map.</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Create the concurrent-safe sorted map for primitive double with reverse order.</p>
-					</span></section>
-				<section class="U" id="createSortedMap(primavera.map.DoubleMap.DoubleComparator)">
-					<h2 class="R"><i class="STATIC PUBLIC"></i><code class="Q">createSortedMap</code><code class="J">(<code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleComparator</a></code> <code class="parameterName">comparator</code>)</code><i class="Y"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="c">
-						<tr class="i">
+</span></section>
+				<section class="O" id="createSortedMap(primavera.map.DoubleMap.DoubleComparator)">
+					<h2 class="l"><i class="PUBLIC STATIC"></i><code class="i">createSortedMap</code><code class="S">(<code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleComparator</a></code> <code class="parameterName">comparator</code>)</code><i class="f"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+					<table class="W">
+						<tr class="X">
 							<td><code>V</code></td>
 							<td><span><p>A value type.</p>
-								</span></td>
+</span></td>
 						</tr>
-						<tr class="j">
+						<tr class="a">
 							<td><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleComparator</a></code> <code>comparator</code></td>
 							<td></td>
 						</tr>
-						<tr class="g">
+						<tr class="P">
 							<td><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></td>
 							<td><span><p>A new created map.</p>
-								</span></td>
+</span></td>
 						</tr>
 					</table><span class="B"><p>Create the concurrent-safe sorted map for primitive double with your order.</p>
-					</span></section>
+</span></section>
 			</article>
-			<aside class="a" id="SubNavi">
-				<div class="e">
-					<h5 class="P">Static Methods</h5>
+			<aside class="H" id="SubNavi">
+				<div class="L">
+					<h5 class="g">Static Methods</h5>
 					<ul>
-						<li><i class="STATIC PUBLIC"></i><code><a href="api/primavera.map.DoubleMap.html#createSortedMap()">createSortedMap</a></code><code class="J">()</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="STATIC PUBLIC"></i><code><a href="api/primavera.map.DoubleMap.html#createReversedMap()">createReversedMap</a></code><code class="J">()</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="STATIC PUBLIC"></i><code><a href="api/primavera.map.DoubleMap.html#createSortedMap(primavera.map.DoubleMap.DoubleComparator)">createSortedMap</a></code><code class="J">(<code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleComparator</a></code> <code class="parameterName">comparator</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
+						<li><i class="PUBLIC STATIC"></i><code><a href="api/primavera.map.DoubleMap.html#createSortedMap()">createSortedMap</a></code><code class="S">()</code><i class="T"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
+						<li><i class="PUBLIC STATIC"></i><code><a href="api/primavera.map.DoubleMap.html#createReversedMap()">createReversedMap</a></code><code class="S">()</code><i class="T"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
+						<li><i class="PUBLIC STATIC"></i><code><a href="api/primavera.map.DoubleMap.html#createSortedMap(primavera.map.DoubleMap.DoubleComparator)">createSortedMap</a></code><code class="S">(<code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleComparator</a></code> <code class="parameterName">comparator</code>)</code><i class="T"><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a><code class="parameters"><code>V</code></code></code></i></li>
 					</ul>
-					<h5 class="P">Methods</h5>
+					<h5 class="g">Methods</h5>
 					<ul>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#containsKey(java.lang.Object)">containsKey</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#containsKey(double)">containsKey</a></code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="M"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#get(java.lang.Object)">get</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#get(double)">get</a></code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#put(java.lang.Double,java.lang.Object)">put</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#put(double,java.lang.Object)">put</a></code><code class="J">(<code>double</code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#remove(java.lang.Object)">remove</a></code><code class="J">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#remove(double)">remove</a></code><code class="J">(<code>double</code> <code class="parameterName">key</code>)</code><i class="M"><code>V</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#doubleEntrySet()">doubleEntrySet</a></code><code class="J">()</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleEntry</a><code class="parameters"><code>V</code></code></code></code></code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#containsKey(java.lang.Object)">containsKey</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#containsKey(double)">containsKey</a></code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="T"><code>boolean</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#get(java.lang.Object)">get</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#get(double)">get</a></code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#put(java.lang.Double,java.lang.Object)">put</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#put(double,java.lang.Object)">put</a></code><code class="S">(<code>double</code> <code class="parameterName">key</code>, <code>V</code> <code class="parameterName">value</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#remove(java.lang.Object)">remove</a></code><code class="S">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code> <code class="parameterName">key</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#remove(double)">remove</a></code><code class="S">(<code>double</code> <code class="parameterName">key</code>)</code><i class="T"><code>V</code></i></li>
+						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.html#doubleEntrySet()">doubleEntrySet</a></code><code class="S">()</code><i class="T"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleEntry</a><code class="parameters"><code>V</code></code></code></code></code></i></li>
 					</ul>
 				</div>
 			</aside>
