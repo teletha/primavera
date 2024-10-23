@@ -8,16 +8,13 @@
  *
  *          https://opensource.org/licenses/MIT
  */
-import static bee.api.License.MIT;
-
-import javax.lang.model.SourceVersion;
+import static bee.api.License.*;
 
 public class Project extends bee.api.Project {
     {
         product("com.github.teletha", "primavera", ref("version.txt"));
         license(MIT);
         versionControlSystem("https://github.com/teletha/primavera");
-        require(SourceVersion.RELEASE_19, SourceVersion.RELEASE_17);
         describe("""
                 Specialized primitive collections.
                 """);
