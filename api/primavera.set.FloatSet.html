@@ -4,187 +4,195 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j"><code class="X">primavera.set</code>
-					<h2 class="Interface J"><code class="h">FloatSet</code></h2>
-					<div class="N">
-						<ul class="C F">
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
-						</ul>
-						<ul class="C G">
-							<li><code><a href="api/primavera.set.NavigableFloatSet.html">NavigableFloatSet</a></code></li>
-							<li><code><a href="api/primavera.set.SortedFloatSet.html">SortedFloatSet</a></code></li>
-						</ul>
-					</div>
-				</section>
-				<section class="j" id="add(java.lang.Float)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">add</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code class="parameterName">e</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code>e</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="add(float)">
-					<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="h">add</code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>float</code><code>value</code></td>
-							<td><span><p>element to be added to this set</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td><span><code>true</code> if this set did not already contain the specified element</span></td>
-						</tr>
-					</table><span class="B"><p>Adds the specified element to this set if it is not already present (optional operation).
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<section class="h"><code class="i">primavera.set</code>
+				<h2 class="Interface k"><code class="f">FloatSet</code></h2>
+				<div class="b">
+					<ul class="C F">
+						<li><code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
+						<li><code><a aria-label="java.lang.Iterable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
+						<li><code><a aria-label="java.util.Set 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html">Set</a><code class="parameters"><code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code></code></code></li>
+					</ul>
+					<ul class="C G">
+						<li><code><a aria-label="primavera.set.NavigableFloatSet" href="api/primavera.set.NavigableFloatSet.html">NavigableFloatSet</a></code></li>
+						<li><code><a aria-label="primavera.set.SortedFloatSet" href="api/primavera.set.SortedFloatSet.html">SortedFloatSet</a></code></li>
+					</ul>
+				</div>
+			</section>
+			<section class="h" id="add(java.lang.Float)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">add</code><code class="e">(<code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code class="parameterName">e</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code class="parameterName">e</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="add(float)">
+				<h2 class="H"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="f">add</code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>float</code><code class="parameterName">value</code></td>
+						<td><span><p>element to be added to this set</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td><span><code>true</code> if this set did not already contain the specified element</span></td>
+					</tr>
+				</table><span class="B"><p>Adds the specified element to this set if it is not already present (optional operation).
 More formally, adds the specified element <code>e</code> to this set if the set contains no
 element <code>e2</code> such that <code>Objects.equals(e, e2)</code>. If this set already contains the
 element, the call leaves the set unchanged and returns <code>false</code>. In combination with the
 restriction on constructors, this ensures that sets never contain duplicate elements.</p><p>
  The stipulation above does not imply that sets must accept all elements; sets may refuse to
  add any particular element, including <code>null</code>, and throw an exception, as described in
- the specification for <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html#add">Collection#add</a></code>. Individual set implementations
+ the specification for <code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html#add">Collection#add</a></code>. Individual set implementations
  should clearly document any restrictions on the elements that they may contain.
 </p>
-					</span></section>
-				<section class="j" id="remove(java.lang.Object)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">remove</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>o</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="remove(float)">
-					<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="h">remove</code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>float</code><code>value</code></td>
-							<td><span><p>object to be removed from this set, if present</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td><span><code>true</code> if this set contained the specified element</span></td>
-						</tr>
-					</table><span class="B"><p>Removes the specified element from this set if it is present (optional operation). More
+				</span></section>
+			<section class="h" id="remove(java.lang.Object)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">remove</code><code class="e">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="remove(float)">
+				<h2 class="H"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="f">remove</code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>float</code><code class="parameterName">value</code></td>
+						<td><span><p>object to be removed from this set, if present</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td><span><code>true</code> if this set contained the specified element</span></td>
+					</tr>
+				</table><span class="B"><p>Removes the specified element from this set if it is present (optional operation). More
 formally, removes an element <code>e</code> such that <code>Objects.equals(o, e)</code>, if this set
 contains such an element. Returns <code>true</code> if this set contained the element (or
 equivalently, if this set changed as a result of the call). (This set will not contain the
 element once the call returns.)</p></span></section>
-				<section class="j" id="contains(java.lang.Object)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">contains</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>o</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="contains(float)">
-					<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="h">contains</code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>float</code><code>value</code></td>
-							<td><span><p>element whose presence in this set is to be tested</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td><span><code>true</code> if this set contains the specified element</span></td>
-						</tr>
-					</table><span class="B"><p>Returns <code>true</code> if this set contains the specified element. More formally, returns
+			<section class="h" id="contains(java.lang.Object)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">contains</code><code class="e">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="contains(float)">
+				<h2 class="H"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="f">contains</code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>float</code><code class="parameterName">value</code></td>
+						<td><span><p>element whose presence in this set is to be tested</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td><span><code>true</code> if this set contains the specified element</span></td>
+					</tr>
+				</table><span class="B"><p>Returns <code>true</code> if this set contains the specified element. More formally, returns
 <code>true</code> if and only if this set contains an element <code>e</code> such that
 <code>Objects.equals(o, e)</code>.</p></span></section>
-				<section class="j" id="toArray()">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">toArray</code><code class="l">()</code><i class="M"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="toArray(java.lang.Object[])">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">toArray</code><code class="l">(<code array="fix">T</code><code class="parameterName">a</code>)</code><i class="M"><code array="fix">T</code></i></h2>
-					<table class="i">
-						<tr class="a">
-							<td><code>T</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code array="fix">T</code><code>a</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code array="fix">T</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-			</article>
-			<aside class="K" id="SubNavi">
-				<div class="b">
-					<h5 class="O">Methods</h5>
-					<ul>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#add(java.lang.Float)">add</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code class="parameterName">e</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#add(float)">add</a></code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#remove(java.lang.Object)">remove</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#remove(float)">remove</a></code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#contains(java.lang.Object)">contains</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#contains(float)">contains</a></code><code class="l">(<code>float</code><code class="parameterName">value</code>)</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#toArray()">toArray</a></code><code class="l">()</code><i class="Z"><code array="fix"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#toArray(java.lang.Object[])">toArray</a></code><code class="l">(<code array="fix">T</code><code class="parameterName">a</code>)</code><i class="Z"><code array="fix">T</code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+			<section class="h" id="toArray()">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">toArray</code><code class="e">()</code><i class="V"><code array="fix"><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code array="fix"><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="toArray(java.lang.Object[])">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">toArray</code><code class="e">(<code array="fix">T</code><code class="parameterName">a</code>)</code><i class="V"><code array="fix">T</code></i></h2>
+				<table class="q">
+					<tr class="W">
+						<td><code>T</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code array="fix">T</code><code class="parameterName">a</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code array="fix">T</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+		</article>
+		<aside class="a">
+			<div class="n">
+				<h5 class="R">Methods</h5>
+				<ul>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#add(java.lang.Float)">add</a></code><code class="e">(<code><a aria-label="java.lang.Float 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html">Float</a></code><code class="parameterName">e</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#add(float)">add</a></code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#remove(java.lang.Object)">remove</a></code><code class="e">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#remove(float)">remove</a></code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#contains(java.lang.Object)">contains</a></code><code class="e">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">o</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#contains(float)">contains</a></code><code class="e">(<code>float</code><code class="parameterName">value</code>)</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#toArray()">toArray</a></code><code class="e">()</code><i class="r"><code array="fix"><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.set.FloatSet.html#toArray(java.lang.Object[])">toArray</a></code><code class="e">(<code array="fix">T</code><code class="parameterName">a</code>)</code><i class="r"><code array="fix">T</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

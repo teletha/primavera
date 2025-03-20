@@ -4,134 +4,116 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j B" id="1.1.0(2023-07-07)">
-					<header class="B R">
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<div class="h">
+				<section class="B" id="1.1.0(2023-07-07)">
+					<header class="B m">
 						<h2>1.1.0 (2023-07-07)</h2>
-						<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
+						<div class="j"><span class="perp p"><svg class="copy A svg" viewBox="0 0 24 24">
 									<use href="main.svg#copy"/>
 								</svg>
-							</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
+							</span><a class="tweet p"><svg class="twitter A svg" viewBox="0 0 24 24">
 									<use href="main.svg#twitter"/>
 								</svg>
 							</a></div>
 					</header>
-					<section class="B Q" id="Features">
-						<header class="B g">
-							<h3>Features</h3>
-							<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#copy"/>
-									</svg>
-								</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#twitter"/>
-									</svg>
-								</a></div>
-						</header>
-						<ul>
-							<li>Add ring buffer. (<a href="https://github.com/teletha/primavera/commit/2b805a4eeddc0788e9fa8f08fe2112c65f728725">2b805a4</a>)</li>
-							<li>support java 17 (<a href="https://github.com/teletha/primavera/commit/4d06245d4049c59a0db6de790caf1e195b368840">4d06245</a>)</li>
-						</ul>
-					</section>
-					<section class="B Q" id="Asserts">
-						<header class="B g">
-							<h3>Assets</h3>
-							<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#copy"/>
-									</svg>
-								</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#twitter"/>
-									</svg>
-								</a></div>
-						</header>
-						<ul>
-							<li><a href="https://github.com/teletha/primavera/archive/refs/tags/v1.1.0.zip">Source code</a> (zip)</li>
-						</ul>
-					</section>
 				</section>
-				<section class="j B" id="1.0.0(2023-07-07)">
-					<header class="B R">
-						<h2>1.0.0 (2023-07-07)</h2>
-						<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
-									<use href="main.svg#copy"/>
-								</svg>
-							</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
-									<use href="main.svg#twitter"/>
-								</svg>
-							</a></div>
+				<section class="B l" id="Features">
+					<header class="B T">
+						<h3>Features</h3>
 					</header>
-					<section class="B Q" id="BugFixes">
-						<header class="B g">
-							<h3>Bug Fixes</h3>
-							<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#copy"/>
-									</svg>
-								</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#twitter"/>
-									</svg>
-								</a></div>
-						</header>
-						<ul>
-							<li>Avoid recursive call. (<a href="https://github.com/teletha/primavera/commit/c45315177edc82f1428762dcc20d71af1912c6ab">c453151</a>)</li>
-						</ul>
-					</section>
-					<section class="B Q" id="Asserts">
-						<header class="B g">
-							<h3>Assets</h3>
-							<div class="H"><span class="perp d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#copy"/>
-									</svg>
-								</span><a class="tweet d"><svg class="A svg" viewBox="0 0 24 24">
-										<use href="main.svg#twitter"/>
-									</svg>
-								</a></div>
-						</header>
-						<ul>
-							<li><a href="https://github.com/teletha/primavera/archive/refs/tags/v1.0.0.zip">Source code</a> (zip)</li>
-						</ul>
-					</section>
-				</section>
-			</article>
-			<aside class="K" id="SubNavi">
-				<div class="b">
 					<ul>
-						<li><a href="doc/changelog.html#1.1.0(2023-07-07)">1.1.0 (2023-07-07)</a></li>
-						<li><a href="doc/changelog.html#1.0.0(2023-07-07)">1.0.0 (2023-07-07)</a></li>
+						<li>Add ring buffer. (<a href="https://github.com/teletha/primavera/commit/2b805a4eeddc0788e9fa8f08fe2112c65f728725">2b805a4</a>)</li>
+						<li>support java 17 (<a href="https://github.com/teletha/primavera/commit/4d06245d4049c59a0db6de790caf1e195b368840">4d06245</a>)</li>
 					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+				</section>
+				<section class="B l" id="Asserts">
+					<header class="B T">
+						<h3>Assets</h3>
+					</header>
+					<ul>
+						<li><a href="https://github.com/teletha/primavera/archive/refs/tags/v1.1.0.zip">Source code</a> (zip)</li>
+					</ul>
+				</section>
+			</div>
+			<div class="h">
+				<section class="B" id="1.0.0(2023-07-07)">
+					<header class="B m">
+						<h2>1.0.0 (2023-07-07)</h2>
+						<div class="j"><span class="perp p"><svg class="copy A svg" viewBox="0 0 24 24">
+									<use href="main.svg#copy"/>
+								</svg>
+							</span><a class="tweet p"><svg class="twitter A svg" viewBox="0 0 24 24">
+									<use href="main.svg#twitter"/>
+								</svg>
+							</a></div>
+					</header>
+				</section>
+				<section class="B l" id="BugFixes">
+					<header class="B T">
+						<h3>Bug Fixes</h3>
+					</header>
+					<ul>
+						<li>Avoid recursive call. (<a href="https://github.com/teletha/primavera/commit/c45315177edc82f1428762dcc20d71af1912c6ab">c453151</a>)</li>
+					</ul>
+				</section>
+				<section class="B l" id="Asserts">
+					<header class="B T">
+						<h3>Assets</h3>
+					</header>
+					<ul>
+						<li><a href="https://github.com/teletha/primavera/archive/refs/tags/v1.0.0.zip">Source code</a> (zip)</li>
+					</ul>
+				</section>
+			</div>
+		</article>
+		<aside class="a">
+			<ul>
+				<li><a href="doc/changelog.html#1.1.0(2023-07-07)">1.1.0 (2023-07-07)</a></li>
+				<li><a href="doc/changelog.html#1.0.0(2023-07-07)">1.0.0 (2023-07-07)</a></li>
+			</ul>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

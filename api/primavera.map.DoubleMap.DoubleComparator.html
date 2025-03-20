@@ -4,90 +4,98 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j"><code class="X">primavera.map</code>
-					<h2 class="Functional J"><code class="h">DoubleMap.DoubleComparator</code></h2>
-					<div class="N">
-						<ul class="C F">
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html">Comparator</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code></code></code></li>
-						</ul>
-					</div><span class="B"><p>Specialized <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html">Comparator</a></code> for primitive value.</p></span></section>
-				<section class="j" id="compare(double,double)">
-					<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="h">compare</code><code class="l">(<code>double</code><code class="parameterName">one</code>, <code>double</code><code class="parameterName">other</code>)</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>double</code><code>one</code></td>
-							<td><span><p>A value to compare.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>double</code><code>other</code></td>
-							<td><span><p>A value to compare.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Compare values.</p></span></section>
-				<section class="j" id="compare(java.lang.Double,java.lang.Double)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">compare</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">one</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">other</code>)</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code>one</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code>other</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-			</article>
-			<aside class="K" id="SubNavi">
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<section class="h"><code class="i">primavera.map</code>
+				<h2 class="Functional k"><code class="f">DoubleMap.DoubleComparator</code></h2>
 				<div class="b">
-					<h5 class="O">Methods</h5>
-					<ul>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html#compare(double,double)">compare</a></code><code class="l">(<code>double</code><code class="parameterName">one</code>, <code>double</code><code class="parameterName">other</code>)</code><i class="Z"><code>int</code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html#compare(java.lang.Double,java.lang.Double)">compare</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">one</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">other</code>)</code><i class="Z"><code>int</code></i></li>
+					<ul class="C F">
+						<li><code><a aria-label="java.util.Comparator 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html">Comparator</a><code class="parameters"><code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code></code></code></li>
 					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+				</div><span class="B"><p>Specialized <code><a aria-label="java.util.Comparator 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html">Comparator</a></code> for primitive value.</p></span></section>
+			<section class="h" id="compare(double,double)">
+				<h2 class="H"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="f">compare</code><code class="e">(<code>double</code><code class="parameterName">one</code>, <code>double</code><code class="parameterName">other</code>)</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>double</code><code class="parameterName">one</code></td>
+						<td><span><p>A value to compare.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>double</code><code class="parameterName">other</code></td>
+						<td><span><p>A value to compare.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Compare values.</p></span></section>
+			<section class="h" id="compare(java.lang.Double,java.lang.Double)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">compare</code><code class="e">(<code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">one</code>, <code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">other</code>)</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">one</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">other</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+		</article>
+		<aside class="a">
+			<div class="n">
+				<h5 class="R">Methods</h5>
+				<ul>
+					<li class="U"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html#compare(double,double)">compare</a></code><code class="e">(<code>double</code><code class="parameterName">one</code>, <code>double</code><code class="parameterName">other</code>)</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html#compare(java.lang.Double,java.lang.Double)">compare</a></code><code class="e">(<code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">one</code>, <code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Double.html">Double</a></code><code class="parameterName">other</code>)</code><i class="r"><code>int</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

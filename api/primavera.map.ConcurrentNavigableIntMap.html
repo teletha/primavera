@@ -4,106 +4,114 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j"><code class="X">primavera.map</code>
-					<h2 class="Interface J"><code class="h">ConcurrentNavigableIntMap</code><code class="l">&#60;<code>V</code>&#62;</code></h2>
-					<div class="N">
-						<ul class="C D">
-							<li><code>V</code></li>
-						</ul>
-						<ul class="C F">
-							<li><code><a href="api/primavera.map.ConcurrentIntMap.html">ConcurrentIntMap</a><code class="parameters"><code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentMap.html">ConcurrentMap</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html">ConcurrentNavigableMap</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-							<li><code><a href="api/primavera.map.IntMap.html">IntMap</a><code class="parameters"><code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Map.html">Map</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-							<li><code><a href="api/primavera.map.NavigableIntMap.html">NavigableIntMap</a><code class="parameters"><code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/NavigableMap.html">NavigableMap</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SequencedMap.html">SequencedMap</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedMap.html">SortedMap</a><code class="parameters"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
-						</ul>
-					</div><span class="B"><p>Sepcialized <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentMap.html">ConcurrentMap</a></code> and <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/NavigableMap.html">NavigableMap</a></code> interface for primitive key.</p></span></section>
-				<section class="j" id="subMap(java.lang.Integer,boolean,java.lang.Integer,boolean)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">subMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>fromInclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>toInclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="subMap(int,boolean,int,boolean)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">subMap</code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>fromKey</code></td>
-							<td><span><p>low endpoint of the keys in the returned map</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>fromInclusive</code></td>
-							<td><span><code>true</code> if the low endpoint is to be included in the returned view</span></td>
-						</tr>
-						<tr class="k">
-							<td><code>int</code><code>toKey</code></td>
-							<td><span><p>high endpoint of the keys in the returned map</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>toInclusive</code></td>
-							<td><span><code>true</code> if the high endpoint is to be included in the returned view</span></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td><span><p>a view of the portion of this map whose keys range from <code>fromKey</code> to
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<section class="h"><code class="i">primavera.map</code>
+				<h2 class="Interface k"><code class="f">ConcurrentNavigableIntMap</code><code class="e">&#60;<code>V</code>&#62;</code></h2>
+				<div class="b">
+					<ul class="C D">
+						<li><code>V</code></li>
+					</ul>
+					<ul class="C F">
+						<li><code><a aria-label="primavera.map.ConcurrentIntMap" href="api/primavera.map.ConcurrentIntMap.html">ConcurrentIntMap</a><code class="parameters"><code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.concurrent.ConcurrentMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentMap.html">ConcurrentMap</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.concurrent.ConcurrentNavigableMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html">ConcurrentNavigableMap</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+						<li><code><a aria-label="primavera.map.IntMap" href="api/primavera.map.IntMap.html">IntMap</a><code class="parameters"><code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.Map 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Map.html">Map</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+						<li><code><a aria-label="primavera.map.NavigableIntMap" href="api/primavera.map.NavigableIntMap.html">NavigableIntMap</a><code class="parameters"><code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.NavigableMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/NavigableMap.html">NavigableMap</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.SequencedMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SequencedMap.html">SequencedMap</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+						<li><code><a aria-label="java.util.SortedMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/SortedMap.html">SortedMap</a><code class="parameters"><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code>, <code>V</code></code></code></li>
+					</ul>
+				</div><span class="B"><p>Sepcialized <code><a aria-label="java.util.concurrent.ConcurrentMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentMap.html">ConcurrentMap</a></code> and <code><a aria-label="java.util.NavigableMap 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/NavigableMap.html">NavigableMap</a></code> interface for primitive key.</p></span></section>
+			<section class="h" id="subMap(java.lang.Integer,boolean,java.lang.Integer,boolean)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">subMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">fromInclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">toInclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="subMap(int,boolean,int,boolean)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">subMap</code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">fromKey</code></td>
+						<td><span><p>low endpoint of the keys in the returned map</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">fromInclusive</code></td>
+						<td><span><code>true</code> if the low endpoint is to be included in the returned view</span></td>
+					</tr>
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">toKey</code></td>
+						<td><span><p>high endpoint of the keys in the returned map</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">toInclusive</code></td>
+						<td><span><code>true</code> if the high endpoint is to be included in the returned view</span></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td><span><p>a view of the portion of this map whose keys range from <code>fromKey</code> to
 <code>toKey</code></p></span></td>
-						</tr>
-					</table><span class="B"><p>Returns a view of the portion of this map whose keys range from <code>fromKey</code> to
+					</tr>
+				</table><span class="B"><p>Returns a view of the portion of this map whose keys range from <code>fromKey</code> to
 <code>toKey</code>. If <code>fromKey</code> and <code>toKey</code> are equal, the returned map is empty
 unless <code>fromInclusive</code> and <code>toInclusive</code> are both true. The returned map is
 backed by this map, so changes in the returned map are reflected in this map, and vice-versa.
@@ -112,220 +120,220 @@ The returned map supports all optional map operations that this map supports.</p
  outside of its range, or to construct a submap either of whose endpoints lie outside its
  range.
 </p>
-					</span></section>
-				<section class="j" id="headMap(java.lang.Integer,boolean)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">headMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>inclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="headMap(int,boolean)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">headMap</code><code class="l">(<code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>toKey</code></td>
-							<td><span><p>high endpoint of the keys in the returned map</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>inclusive</code></td>
-							<td><span><code>true</code> if the high endpoint is to be included in the returned view</span></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td><span><p>a view of the portion of this map whose keys are less than (or equal to, if
+				</span></section>
+			<section class="h" id="headMap(java.lang.Integer,boolean)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">headMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">inclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="headMap(int,boolean)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">headMap</code><code class="e">(<code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">toKey</code></td>
+						<td><span><p>high endpoint of the keys in the returned map</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">inclusive</code></td>
+						<td><span><code>true</code> if the high endpoint is to be included in the returned view</span></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td><span><p>a view of the portion of this map whose keys are less than (or equal to, if
 <code>inclusive</code> is true) <code>toKey</code></p></span></td>
-						</tr>
-					</table><span class="B"><p>Returns a view of the portion of this map whose keys are less than (or equal to, if
+					</tr>
+				</table><span class="B"><p>Returns a view of the portion of this map whose keys are less than (or equal to, if
 <code>inclusive</code> is true) <code>toKey</code>. The returned map is backed by this map, so changes
 in the returned map are reflected in this map, and vice-versa. The returned map supports all
 optional map operations that this map supports.</p><p>
  The returned map will throw an <code>IllegalArgumentException</code> on an attempt to insert a key
  outside its range.
 </p>
-					</span></section>
-				<section class="j" id="tailMap(java.lang.Integer,boolean)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">tailMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>inclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="tailMap(int,boolean)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">tailMap</code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>fromKey</code></td>
-							<td><span><p>low endpoint of the keys in the returned map</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>boolean</code><code>inclusive</code></td>
-							<td><span><code>true</code> if the low endpoint is to be included in the returned view</span></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td><span><p>a view of the portion of this map whose keys are greater than (or equal to, if
+				</span></section>
+			<section class="h" id="tailMap(java.lang.Integer,boolean)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">tailMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">inclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="tailMap(int,boolean)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">tailMap</code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">fromKey</code></td>
+						<td><span><p>low endpoint of the keys in the returned map</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>boolean</code><code class="parameterName">inclusive</code></td>
+						<td><span><code>true</code> if the low endpoint is to be included in the returned view</span></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td><span><p>a view of the portion of this map whose keys are greater than (or equal to, if
 <code>inclusive</code> is true) <code>fromKey</code></p></span></td>
-						</tr>
-					</table><span class="B"><p>Returns a view of the portion of this map whose keys are greater than (or equal to, if
+					</tr>
+				</table><span class="B"><p>Returns a view of the portion of this map whose keys are greater than (or equal to, if
 <code>inclusive</code> is true) <code>fromKey</code>. The returned map is backed by this map, so
 changes in the returned map are reflected in this map, and vice-versa. The returned map
 supports all optional map operations that this map supports.</p><p>
  The returned map will throw an <code>IllegalArgumentException</code> on an attempt to insert a key
  outside its range.
 </p>
-					</span></section>
-				<section class="j" id="subMap(java.lang.Integer,java.lang.Integer)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">subMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="subMap(int,int)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">subMap</code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>int</code><code class="parameterName">toKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="k">
-							<td><code>int</code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>
+				</span></section>
+			<section class="h" id="subMap(java.lang.Integer,java.lang.Integer)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">subMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="subMap(int,int)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">subMap</code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>int</code><code class="parameterName">toKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>
  Equivalent to <code>subMap(fromKey, true, toKey, false)</code>.
 </p>
-					</span></section>
-				<section class="j" id="headMap(java.lang.Integer)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">headMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="headMap(int)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">headMap</code><code class="l">(<code>int</code><code class="parameterName">toKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>toKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>
+				</span></section>
+			<section class="h" id="headMap(java.lang.Integer)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">headMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="headMap(int)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">headMap</code><code class="e">(<code>int</code><code class="parameterName">toKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">toKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>
  Equivalent to <code>headMap(toKey, false)</code>.
 </p>
-					</span></section>
-				<section class="j" id="tailMap(java.lang.Integer)">
-					<h2 class="S"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">tailMap</code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="j" id="tailMap(int)">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">tailMap</code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>)</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>fromKey</code></td>
-							<td></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>
+				</span></section>
+			<section class="h" id="tailMap(java.lang.Integer)">
+				<h2 class="H"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">tailMap</code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="h" id="tailMap(int)">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">tailMap</code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>)</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">fromKey</code></td>
+						<td></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>
  Equivalent to <code>tailMap(fromKey, true)</code>.
 </p>
-					</span></section>
-				<section class="j" id="descendingMap()">
-					<h2 class="S"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="h">descendingMap</code><code class="l">()</code><i class="M"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
-							<td><span><p>a reverse order view of this map</p></span></td>
-						</tr>
-					</table><span class="B"><p>Returns a reverse order view of the mappings contained in this map. The descending map is
+				</span></section>
+			<section class="h" id="descendingMap()">
+				<h2 class="H"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code class="f">descendingMap</code><code class="e">()</code><i class="V"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></td>
+						<td><span><p>a reverse order view of this map</p></span></td>
+					</tr>
+				</table><span class="B"><p>Returns a reverse order view of the mappings contained in this map. The descending map is
 backed by this map, so changes to the map are reflected in the descending map, and
 vice-versa.</p><p>
  The returned map has an ordering equivalent to
- <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)">java.util.Collections#reverseOrder(Comparator)</a></code><code>(comparator())</code>. The expression
+ <code><a aria-label="java.util.Collections 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)">java.util.Collections#reverseOrder(Comparator)</a></code><code>(comparator())</code>. The expression
  <code>m.descendingMap().descendingMap()</code> returns a view of <code>m</code> essentially equivalent
  to <code>m</code>.
 </p>
-					</span></section>
-			</article>
-			<aside class="K" id="SubNavi">
-				<div class="b">
-					<h5 class="O">Methods</h5>
-					<ul>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(java.lang.Integer,boolean,java.lang.Integer,boolean)">subMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(int,boolean,int,boolean)">subMap</a></code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(java.lang.Integer,boolean)">headMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(int,boolean)">headMap</a></code><code class="l">(<code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(java.lang.Integer,boolean)">tailMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(int,boolean)">tailMap</a></code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(java.lang.Integer,java.lang.Integer)">subMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(int,int)">subMap</a></code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>, <code>int</code><code class="parameterName">toKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(java.lang.Integer)">headMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(int)">headMap</a></code><code class="l">(<code>int</code><code class="parameterName">toKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(java.lang.Integer)">tailMap</a></code><code class="l">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(int)">tailMap</a></code><code class="l">(<code>int</code><code class="parameterName">fromKey</code>)</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-						<li><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#descendingMap()">descendingMap</a></code><code class="l">()</code><i class="Z"><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+				</span></section>
+		</article>
+		<aside class="a">
+			<div class="n">
+				<h5 class="R">Methods</h5>
+				<ul>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(java.lang.Integer,boolean,java.lang.Integer,boolean)">subMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(int,boolean,int,boolean)">subMap</a></code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">fromInclusive</code>, <code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">toInclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(java.lang.Integer,boolean)">headMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(int,boolean)">headMap</a></code><code class="e">(<code>int</code><code class="parameterName">toKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(java.lang.Integer,boolean)">tailMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(int,boolean)">tailMap</a></code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>boolean</code><code class="parameterName">inclusive</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(java.lang.Integer,java.lang.Integer)">subMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>, <code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#subMap(int,int)">subMap</a></code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>, <code>int</code><code class="parameterName">toKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(java.lang.Integer)">headMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">toKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#headMap(int)">headMap</a></code><code class="e">(<code>int</code><code class="parameterName">toKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="DEFAULT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(java.lang.Integer)">tailMap</a></code><code class="e">(<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html">Integer</a></code><code class="parameterName">fromKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#tailMap(int)">tailMap</a></code><code class="e">(<code>int</code><code class="parameterName">fromKey</code>)</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+					<li class="U"><i class="ABSTRACT"><i class="OVERRIDE PUBLIC"></i></i><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html#descendingMap()">descendingMap</a></code><code class="e">()</code><i class="r"><code><a aria-label="primavera.map.ConcurrentNavigableIntMap" href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a><code class="parameters"><code>V</code></code></code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

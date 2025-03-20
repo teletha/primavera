@@ -4,217 +4,225 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j"><code class="X">primavera.array</code>
-					<h2 class="Class J"><code class="h">IntList</code></h2>
-					<div class="N"></div><span class="B"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html">ArrayList</a></code> like data structure for numeric primitive type.</span></section>
-				<section class="j" id="IntList()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">IntList</code><code class="l">()</code></h2><span class="B"><p>Create empty array.</p></span></section>
-				<section class="j" id="IntList(int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">IntList</code><code class="l">(<code>int</code><code class="parameterName">initialRawArraySize</code>)</code></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>initialRawArraySize</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Create empty array with the specified array size.</p></span></section>
-				<section class="j" id="add(int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">add</code><code class="l">(<code>int</code><code class="parameterName">value</code>)</code><i class="M"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>value</code></td>
-							<td><span><p>A value to append.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.array.IntList.html">IntList</a></code></td>
-							<td><span><p>Chainable API.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Add new value at last.</p></span></section>
-				<section class="j" id="first()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">first</code><code class="l">()</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code>int</code></td>
-							<td><span><p>A first element.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Get the first element. If this array has no element, 0 will be returned.</p></span></section>
-				<section class="j" id="last()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">last</code><code class="l">()</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code>int</code></td>
-							<td><span><p>A last element.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Get the last element. If this array has no element, 0 will be returned.</p></span></section>
-				<section class="j" id="get(int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">get</code><code class="l">(<code>int</code><code class="parameterName">index</code>)</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>index</code></td>
-							<td><span><p>An index to get.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>int</code></td>
-							<td><span><p>The indexed value.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Get the value at the specified index. If out of bounded index is specified, 0 will be
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<section class="h"><code class="i">primavera.array</code>
+				<h2 class="Class k"><code class="f">IntList</code></h2>
+				<div class="b"></div><span class="B"><code><a aria-label="java.util.ArrayList 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html">ArrayList</a></code> like data structure for numeric primitive type.</span></section>
+			<section class="h" id="IntList()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">IntList</code><code class="e">()</code></h2><span class="B"><p>Create empty array.</p></span></section>
+			<section class="h" id="IntList(int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">IntList</code><code class="e">(<code>int</code><code class="parameterName">initialRawArraySize</code>)</code></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">initialRawArraySize</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Create empty array with the specified array size.</p></span></section>
+			<section class="h" id="add(int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">add</code><code class="e">(<code>int</code><code class="parameterName">value</code>)</code><i class="V"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">value</code></td>
+						<td><span><p>A value to append.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></td>
+						<td><span><p>Chainable API.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Add new value at last.</p></span></section>
+			<section class="h" id="first()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">first</code><code class="e">()</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code>int</code></td>
+						<td><span><p>A first element.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Get the first element. If this array has no element, 0 will be returned.</p></span></section>
+			<section class="h" id="last()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">last</code><code class="e">()</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code>int</code></td>
+						<td><span><p>A last element.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Get the last element. If this array has no element, 0 will be returned.</p></span></section>
+			<section class="h" id="get(int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">get</code><code class="e">(<code>int</code><code class="parameterName">index</code>)</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">index</code></td>
+						<td><span><p>An index to get.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>int</code></td>
+						<td><span><p>The indexed value.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Get the value at the specified index. If out of bounded index is specified, 0 will be
 returned.</p></span></section>
-				<section class="j" id="set(int,int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">set</code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">value</code>)</code><i class="M"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>index</code></td>
-							<td><span><p>An index to set.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>int</code><code>value</code></td>
-							<td><span><p>A value to set.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code><a href="api/primavera.array.IntList.html">IntList</a></code></td>
-							<td><span><p>Chainable API.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Set the value at the specified index.</p></span></section>
-				<section class="j" id="increment(int,int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">increment</code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">increment</code>)</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>index</code></td>
-							<td><span><p>An index to set.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>int</code><code>increment</code></td>
-							<td><span><p>A value to increment.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>int</code></td>
-							<td><span><p>An updated value.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Increment the value at the specified index.</p></span></section>
-				<section class="j" id="decrement(int,int)">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">decrement</code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">decrement</code>)</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>int</code><code>index</code></td>
-							<td><span><p>An index to set.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>int</code><code>decrement</code></td>
-							<td><span><p>A value to decrement.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>int</code></td>
-							<td><span><p>An updated value.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Decrement the value at the specified index.</p></span></section>
-				<section class="j" id="size()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">size</code><code class="l">()</code><i class="M"><code>int</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Get the number of elemenets.</p></span></section>
-				<section class="j" id="isEmpty()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">isEmpty</code><code class="l">()</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Check whether this array is empty or not.</p></span></section>
-				<section class="j" id="isNotEmpty()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">isNotEmpty</code><code class="l">()</code><i class="M"><code>boolean</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Check whether this array is empty or not.</p></span></section>
-				<section class="j" id="clear()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">clear</code><code class="l">()</code><i class="M"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code><a href="api/primavera.array.IntList.html">IntList</a></code></td>
-							<td><span><p>Chainable API.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Clear all elements.</p></span></section>
-				<section class="j" id="asArray()">
-					<h2 class="S"><i class="PUBLIC"></i><code class="h">asArray</code><code class="l">()</code><i class="M"><code array="fix">int</code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code array="fix">int</code></td>
-							<td><span><p>Actual array.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Expose low-level array.</p></span></section>
-				<section class="j" id="toString()">
-					<h2 class="S"><i class="OVERRIDE PUBLIC"></i><code class="h">toString</code><code class="l">()</code><i class="M"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-					<table class="i">
-						<tr class="P">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-			</article>
-			<aside class="K" id="SubNavi">
-				<div class="b">
-					<h5 class="O">Constructors</h5>
-					<ul>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#IntList()">IntList</a></code><code class="l">()</code></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#IntList(int)">IntList</a></code><code class="l">(<code>int</code><code class="parameterName">initialRawArraySize</code>)</code></li>
-					</ul>
-					<h5 class="O">Methods</h5>
-					<ul>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#add(int)">add</a></code><code class="l">(<code>int</code><code class="parameterName">value</code>)</code><i class="Z"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#first()">first</a></code><code class="l">()</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#last()">last</a></code><code class="l">()</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#get(int)">get</a></code><code class="l">(<code>int</code><code class="parameterName">index</code>)</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#set(int,int)">set</a></code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">value</code>)</code><i class="Z"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#increment(int,int)">increment</a></code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">increment</code>)</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#decrement(int,int)">decrement</a></code><code class="l">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">decrement</code>)</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#size()">size</a></code><code class="l">()</code><i class="Z"><code>int</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#isEmpty()">isEmpty</a></code><code class="l">()</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#isNotEmpty()">isNotEmpty</a></code><code class="l">()</code><i class="Z"><code>boolean</code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#clear()">clear</a></code><code class="l">()</code><i class="Z"><code><a href="api/primavera.array.IntList.html">IntList</a></code></i></li>
-						<li><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#asArray()">asArray</a></code><code class="l">()</code><i class="Z"><code array="fix">int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/primavera.array.IntList.html#toString()">toString</a></code><code class="l">()</code><i class="Z"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+			<section class="h" id="set(int,int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">set</code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">value</code>)</code><i class="V"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">index</code></td>
+						<td><span><p>An index to set.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">value</code></td>
+						<td><span><p>A value to set.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></td>
+						<td><span><p>Chainable API.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Set the value at the specified index.</p></span></section>
+			<section class="h" id="increment(int,int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">increment</code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">increment</code>)</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">index</code></td>
+						<td><span><p>An index to set.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">increment</code></td>
+						<td><span><p>A value to increment.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>int</code></td>
+						<td><span><p>An updated value.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Increment the value at the specified index.</p></span></section>
+			<section class="h" id="decrement(int,int)">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">decrement</code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">decrement</code>)</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">index</code></td>
+						<td><span><p>An index to set.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>int</code><code class="parameterName">decrement</code></td>
+						<td><span><p>A value to decrement.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>int</code></td>
+						<td><span><p>An updated value.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Decrement the value at the specified index.</p></span></section>
+			<section class="h" id="size()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">size</code><code class="e">()</code><i class="V"><code>int</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Get the number of elemenets.</p></span></section>
+			<section class="h" id="isEmpty()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">isEmpty</code><code class="e">()</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Check whether this array is empty or not.</p></span></section>
+			<section class="h" id="isNotEmpty()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">isNotEmpty</code><code class="e">()</code><i class="V"><code>boolean</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Check whether this array is empty or not.</p></span></section>
+			<section class="h" id="clear()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">clear</code><code class="e">()</code><i class="V"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></td>
+						<td><span><p>Chainable API.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Clear all elements.</p></span></section>
+			<section class="h" id="asArray()">
+				<h2 class="H"><i class="PUBLIC"></i><code class="f">asArray</code><code class="e">()</code><i class="V"><code array="fix">int</code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code array="fix">int</code></td>
+						<td><span><p>Actual array.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Expose low-level array.</p></span></section>
+			<section class="h" id="toString()">
+				<h2 class="H"><i class="OVERRIDE PUBLIC"></i><code class="f">toString</code><code class="e">()</code><i class="V"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="q">
+					<tr class="g">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+		</article>
+		<aside class="a">
+			<div class="n">
+				<h5 class="R">Constructors</h5>
+				<ul>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#IntList()">IntList</a></code><code class="e">()</code></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#IntList(int)">IntList</a></code><code class="e">(<code>int</code><code class="parameterName">initialRawArraySize</code>)</code></li>
+				</ul>
+				<h5 class="R">Methods</h5>
+				<ul>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#add(int)">add</a></code><code class="e">(<code>int</code><code class="parameterName">value</code>)</code><i class="r"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#first()">first</a></code><code class="e">()</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#last()">last</a></code><code class="e">()</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#get(int)">get</a></code><code class="e">(<code>int</code><code class="parameterName">index</code>)</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#set(int,int)">set</a></code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">value</code>)</code><i class="r"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#increment(int,int)">increment</a></code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">increment</code>)</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#decrement(int,int)">decrement</a></code><code class="e">(<code>int</code><code class="parameterName">index</code>, <code>int</code><code class="parameterName">decrement</code>)</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#size()">size</a></code><code class="e">()</code><i class="r"><code>int</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#isEmpty()">isEmpty</a></code><code class="e">()</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#isNotEmpty()">isNotEmpty</a></code><code class="e">()</code><i class="r"><code>boolean</code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#clear()">clear</a></code><code class="e">()</code><i class="r"><code><a aria-label="primavera.array.IntList" href="api/primavera.array.IntList.html">IntList</a></code></i></li>
+					<li class="U"><i class="PUBLIC"></i><code><a href="api/primavera.array.IntList.html#asArray()">asArray</a></code><code class="e">()</code><i class="r"><code array="fix">int</code></i></li>
+					<li class="U"><i class="OVERRIDE PUBLIC"></i><code><a href="api/primavera.array.IntList.html#toString()">toString</a></code><code class="e">()</code><i class="r"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

@@ -4,73 +4,81 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Primavera and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Primavera API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="f">
-		<header class="U">
-			<h1 class="m" date="2023-07-07" ver="1.1.0"><code>Primavera</code></h1>
-			<nav class="V"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="Z">
+		<header class="X" date="2023-07-07" ver="1.1.0">
+			<h1 class="Q"><code>Primavera</code></h1>
+			<nav class="Y"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/primavera/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/primavera" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="T" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="S"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="e">
-			<nav class="c">
-				<div></div>
-			</nav>
-			<article class="I" id="Article">
-				<section class="j"><code class="X">primavera.function</code>
-					<h2 class="Functional J"><code class="h">LongTriFunction</code></h2>
-					<div class="N"></div>
-				</section>
-				<section class="j" id="applyAsLong(long,long,long)">
-					<h2 class="S"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="h">applyAsLong</code><code class="l">(<code>long</code><code class="parameterName">param1</code>, <code>long</code><code class="parameterName">param2</code>, <code>long</code><code class="parameterName">param3</code>)</code><i class="M"><code>long</code></i></h2>
-					<table class="i">
-						<tr class="k">
-							<td><code>long</code><code>param1</code></td>
-							<td><span><p>First parameter.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>long</code><code>param2</code></td>
-							<td><span><p>Second parameter.</p></span></td>
-						</tr>
-						<tr class="k">
-							<td><code>long</code><code>param3</code></td>
-							<td><span><p>Third parameter.</p></span></td>
-						</tr>
-						<tr class="P">
-							<td><code>long</code></td>
-							<td><span><p>A calculated result.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Composes a single value from three arguments.</p></span></section>
-			</article>
-			<aside class="K" id="SubNavi">
-				<div class="b">
-					<h5 class="O">Methods</h5>
-					<ul>
-						<li><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.function.LongTriFunction.html#applyAsLong(long,long,long)">applyAsLong</a></code><code class="l">(<code>long</code><code class="parameterName">param1</code>, <code>long</code><code class="parameterName">param2</code>, <code>long</code><code class="parameterName">param3</code>)</code><i class="Z"><code>long</code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+		<nav class="O"></nav>
+		<article class="N" id="Article">
+			<section class="h"><code class="i">primavera.function</code>
+				<h2 class="Functional k"><code class="f">LongTriFunction</code></h2>
+				<div class="b"></div>
+			</section>
+			<section class="h" id="applyAsLong(long,long,long)">
+				<h2 class="H"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code class="f">applyAsLong</code><code class="e">(<code>long</code><code class="parameterName">param1</code>, <code>long</code><code class="parameterName">param2</code>, <code>long</code><code class="parameterName">param3</code>)</code><i class="V"><code>long</code></i></h2>
+				<table class="q">
+					<tr class="o">
+						<td><code>long</code><code class="parameterName">param1</code></td>
+						<td><span><p>First parameter.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>long</code><code class="parameterName">param2</code></td>
+						<td><span><p>Second parameter.</p></span></td>
+					</tr>
+					<tr class="o">
+						<td><code>long</code><code class="parameterName">param3</code></td>
+						<td><span><p>Third parameter.</p></span></td>
+					</tr>
+					<tr class="g">
+						<td><code>long</code></td>
+						<td><span><p>A calculated result.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Composes a single value from three arguments.</p></span></section>
+		</article>
+		<aside class="a">
+			<div class="n">
+				<h5 class="R">Methods</h5>
+				<ul>
+					<li class="U"><i class="ABSTRACT"><i class="PUBLIC"></i></i><code><a href="api/primavera.function.LongTriFunction.html#applyAsLong(long,long,long)">applyAsLong</a></code><code class="e">(<code>long</code><code class="parameterName">param1</code>, <code>long</code><code class="parameterName">param2</code>, <code>long</code><code class="parameterName">param3</code>)</code><i class="r"><code>long</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="c"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>
