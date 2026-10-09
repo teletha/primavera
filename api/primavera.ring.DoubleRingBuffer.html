@@ -19,10 +19,10 @@
 		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="J">
-		<header class="K" date="2026-10-09">
-			<h1 class="AB"><a href="index.html"><code>Primavera</code></a></h1>
-			<nav class="T"><a href="api/main.html" id="API"><svg class="package">
+	<body class="q">
+		<header class="Z" date="2026-10-09">
+			<h1 class="Y"><a href="index.html"><code>Primavera</code></a></h1>
+			<nav class="a"><a href="api/main.html" id="API"><svg class="package">
 						<use href="main.svg#package"/>
 					</svg>
 				</a><a href="doc/changelog.html" id="Activity"><svg class="activity">
@@ -35,136 +35,136 @@
 						<use href="main.svg#github"/>
 					</svg>
 				</a></nav>
-			<div class="v"><a aria-label="Change color scheme" id="theme"><svg class="sun">
+			<div class="b"><a aria-label="Change color scheme" id="theme"><svg class="sun">
 						<use href="main.svg#sun"/>
 					</svg><svg class="moon">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<nav class="N"></nav>
-		<article class="L" id="Article">
-			<section class="q"><code class="b">primavera.ring</code>
-				<h2 class="Class t"><code class="d">DoubleRingBuffer</code></h2>
+		<nav class="k"></nav>
+		<article class="W" id="Article">
+			<section class="LB"><code class="d">primavera.ring</code>
+				<h2 class="Class g"><code class="IB">DoubleRingBuffer</code></h2>
 				<div class="Q"></div>
 			</section>
-			<section class="q" id="DoubleRingBuffer(int)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">DoubleRingBuffer</code><code class="KB">(<code>int</code><code class="parameterName">size</code>)</code></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="DoubleRingBuffer(int)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">DoubleRingBuffer</code><code class="U">(<code>int</code><code class="parameterName">size</code>)</code></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td><span><p>A fixed buffer size.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Create new buffer.</p></span></section>
-			<section class="q" id="add(double)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">add</code><code class="KB">(<code>double</code><code class="parameterName">item</code>)</code><i class="x"><code>double</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="add(double)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">add</code><code class="U">(<code>double</code><code class="parameterName">item</code>)</code><i class="c"><code>double</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code>double</code><code class="parameterName">item</code></td>
 						<td><span><p>An item to add.</p></span></td>
 					</tr>
-					<tr class="DB">
+					<tr class="t">
 						<td><code>double</code></td>
 						<td><span><p>Removed item.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Add an item at tail.</p></span></section>
-			<section class="q" id="latest()">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">latest</code><code class="KB">()</code><i class="x"><code>double</code></i></h2>
-				<table class="o">
-					<tr class="DB">
+			<section class="LB" id="latest()">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">latest</code><code class="U">()</code><i class="c"><code>double</code></i></h2>
+				<table class="P">
+					<tr class="t">
 						<td><code>double</code></td>
 						<td><span><p>A latest item.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Get the latest item.</p></span></section>
-			<section class="q" id="forEach(java.util.function.DoubleConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">forEach</code><code class="KB">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="x"><code>void</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="forEach(java.util.function.DoubleConsumer)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEach</code><code class="U">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items.</p></span></section>
-			<section class="q" id="forEach(int,java.util.function.DoubleConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">forEach</code><code class="KB">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="x"><code>void</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="forEach(int,java.util.function.DoubleConsumer)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEach</code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td></td>
 					</tr>
-					<tr class="R">
+					<tr class="l">
 						<td><code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items.</p></span></section>
-			<section class="q" id="forEachFromLatest(java.util.function.DoubleConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">forEachFromLatest</code><code class="KB">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="x"><code>void</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="forEachFromLatest(java.util.function.DoubleConsumer)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEachFromLatest</code><code class="U">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items from latest.</p></span></section>
-			<section class="q" id="forEachFromLatest(int,java.util.function.DoubleConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">forEachFromLatest</code><code class="KB">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="x"><code>void</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="forEachFromLatest(int,java.util.function.DoubleConsumer)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEachFromLatest</code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td></td>
 					</tr>
-					<tr class="R">
+					<tr class="l">
 						<td><code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items from latest.</p></span></section>
-			<section class="q" id="reduce(java.util.function.DoubleBinaryOperator)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">reduce</code><code class="KB">(<code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="x"><code>double</code></i></h2>
-				<table class="o">
-					<tr class="R">
+			<section class="LB" id="reduce(java.util.function.DoubleBinaryOperator)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">reduce</code><code class="U">(<code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="c"><code>double</code></i></h2>
+				<table class="P">
+					<tr class="l">
 						<td><code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">operator</code></td>
 						<td><span><p>The calculation.</p></span></td>
 					</tr>
-					<tr class="DB">
+					<tr class="t">
 						<td><code>double</code></td>
 						<td><span><p>The reduced result.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Reduce items.</p></span></section>
-			<section class="q" id="to(java.lang.Object)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="d">to</code><code class="KB">(<code>C</code><code class="parameterName">collection</code>)</code><i class="x"><code>C</code></i></h2>
-				<table class="o">
-					<tr class="X">
+			<section class="LB" id="to(java.lang.Object)">
+				<h2 class="e"><i class="PUBLIC"></i><code class="IB">to</code><code class="U">(<code>C</code><code class="parameterName">collection</code>)</code><i class="c"><code>C</code></i></h2>
+				<table class="P">
+					<tr class="m">
 						<td><code>C</code><code class="extends"><code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a aria-label="java.lang.Double 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Double.html">Double</a></code></code></code></code></td>
 						<td><span><p>A collection type.</p></span></td>
 					</tr>
-					<tr class="R">
+					<tr class="l">
 						<td><code>C</code><code class="parameterName">collection</code></td>
 						<td><span><p>A target collection.</p></span></td>
 					</tr>
-					<tr class="DB">
+					<tr class="t">
 						<td><code>C</code></td>
 						<td><span><p>A recomposed collection.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Recompose to the specified <code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html">Collection</a></code>.</p></span></section>
 		</article>
-		<aside class="O">
-			<div class="W">
-				<h5 class="k">Constructors</h5>
+		<aside class="J">
+			<div class="FB">
+				<h5 class="HB">Constructors</h5>
 				<ul>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#DoubleRingBuffer(int)">DoubleRingBuffer</a></code><code class="KB">(<code>int</code><code class="parameterName">size</code>)</code></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#DoubleRingBuffer(int)">DoubleRingBuffer</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>)</code></li>
 				</ul>
-				<h5 class="k">Methods</h5>
+				<h5 class="HB">Methods</h5>
 				<ul>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#add(double)">add</a></code><code class="KB">(<code>double</code><code class="parameterName">item</code>)</code><i class="BB"><code>double</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#latest()">latest</a></code><code class="KB">()</code><i class="BB"><code>double</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEach(java.util.function.DoubleConsumer)">forEach</a></code><code class="KB">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="BB"><code>void</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEach(int,java.util.function.DoubleConsumer)">forEach</a></code><code class="KB">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="BB"><code>void</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEachFromLatest(java.util.function.DoubleConsumer)">forEachFromLatest</a></code><code class="KB">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="BB"><code>void</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEachFromLatest(int,java.util.function.DoubleConsumer)">forEachFromLatest</a></code><code class="KB">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="BB"><code>void</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#reduce(java.util.function.DoubleBinaryOperator)">reduce</a></code><code class="KB">(<code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="BB"><code>double</code></i></li>
-					<li class="HB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#to(java.lang.Object)">to</a></code><code class="KB">(<code>C</code><code class="parameterName">collection</code>)</code><i class="BB"><code>C</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#add(double)">add</a></code><code class="U">(<code>double</code><code class="parameterName">item</code>)</code><i class="O"><code>double</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#latest()">latest</a></code><code class="U">()</code><i class="O"><code>double</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEach(java.util.function.DoubleConsumer)">forEach</a></code><code class="U">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEach(int,java.util.function.DoubleConsumer)">forEach</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEachFromLatest(java.util.function.DoubleConsumer)">forEachFromLatest</a></code><code class="U">(<code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#forEachFromLatest(int,java.util.function.DoubleConsumer)">forEachFromLatest</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.DoubleConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#reduce(java.util.function.DoubleBinaryOperator)">reduce</a></code><code class="U">(<code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="O"><code>double</code></i></li>
+					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.DoubleRingBuffer.html#to(java.lang.Object)">to</a></code><code class="U">(<code>C</code><code class="parameterName">collection</code>)</code><i class="O"><code>C</code></i></li>
 				</ul>
 			</div>
 		</aside>
-		<footer class="M">
+		<footer class="r">
 			<p>Powered by <a href="https://github.com/teletha/evergarden" target="_">Evergarden</a></p>
 		</footer>
 	</body>
