@@ -12,16 +12,16 @@ import static bee.api.License.*;
 
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "primavera", ref("version.txt"));
+        product("io.github.teletha", "primavera", ref("version.txt"));
         license(MIT);
         versionControlSystem("https://github.com/teletha/primavera");
         describe("""
                 Specialized primitive collections.
                 """);
 
-        require("com.github.teletha", "sinobu");
-        require("com.github.teletha", "antibug").atTest();
-        require("com.github.teletha", "psychopath").atTest();
+        require("io.github.teletha", "sinobu");
+        require("io.github.teletha", "antibug").atTest();
+        require("io.github.teletha", "psychopath").atTest();
         require("com.google.guava", "guava").atTest();
     }
 }
