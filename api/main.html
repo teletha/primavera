@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="Explains how to use Primavera and its API. Additional primitive collections." name="description"/>
+		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Material+Icons" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Vollkorn" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
+		<title>Primavera API</title>
+		<base href="../"/>
+		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
+		<link href="main.css" rel="stylesheet"/>
+	</head>
+	<body class="J">
+		<header class="K" date="2026-10-09">
+			<h1 class="AB"><a href="index.html"><code>Primavera</code></a></h1>
+			<nav class="T"><a href="api/main.html" id="API"><svg class="package">
+						<use href="main.svg#package"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera/discussions" id="Community" target="_blank"><svg class="user">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="https://github.com/teletha/primavera" id="Repository" target="_blank"><svg class="github">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="v"><a aria-label="Change color scheme" id="theme"><svg class="sun">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon">
+						<use href="main.svg#moon"/>
+					</svg>
+				</a></div>
+		</header>
+		<nav class="N"></nav>
+		<article class="L" id="Article">
+			<div class="q">
+				<section class="A">
+					<h2>Primavera API Overview</h2>
+					<p>This page provides a concise overview of the available APIs, including their purpose, key functionalities, and usage patterns. It serves as a starting point for developers to understand how to integrate and interact with the system effectively.</p>
+					<section class="A">
+						<h4>🛠️ Interface</h4>
+						<table>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentNavigableLongMap.html">ConcurrentNavigableLongMap</a></code></td>
+								<td>Sepcialized ConcurrentMap and NavigableMap interface for primitive key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentDoubleMap.html">ConcurrentDoubleMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.IntMap.html">IntMap</a></code></td>
+								<td>Specialized Map interface for int key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.IntMap.IntEntry.html">IntMap.IntEntry</a></code></td>
+								<td>Specialized entry for primitive int.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.DoubleMap.html">DoubleMap</a></code></td>
+								<td>Specialized Map interface for double key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.DoubleMap.DoubleEntry.html">DoubleMap.DoubleEntry</a></code></td>
+								<td>Specialized entry for primitive double.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentNavigableDoubleMap.html">ConcurrentNavigableDoubleMap</a></code></td>
+								<td>Sepcialized ConcurrentMap and NavigableMap interface for primitive key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentNavigableIntMap.html">ConcurrentNavigableIntMap</a></code></td>
+								<td>Sepcialized ConcurrentMap and NavigableMap interface for primitive key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.NavigableDoubleMap.html">NavigableDoubleMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentLongMap.html">ConcurrentLongMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.NavigableLongMap.html">NavigableLongMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.NavigableIntMap.html">NavigableIntMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.LongMap.html">LongMap</a></code></td>
+								<td>Specialized Map interface for long key.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.LongMap.LongEntry.html">LongMap.LongEntry</a></code></td>
+								<td>Specialized entry for primitive long.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.ConcurrentIntMap.html">ConcurrentIntMap</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.SortedLongSet.html">SortedLongSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.NavigableLongSet.html">NavigableLongSet</a></code></td>
+								<td>Sepcialized NavigableSet interface for long value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.FloatSet.html">FloatSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.NavigableIntSet.html">NavigableIntSet</a></code></td>
+								<td>Sepcialized NavigableSet interface for int value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.LongSet.html">LongSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.SortedFloatSet.html">SortedFloatSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.IntSet.html">IntSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.SortedIntSet.html">SortedIntSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.DoubleSet.html">DoubleSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.SortedDoubleSet.html">SortedDoubleSet</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.NavigableFloatSet.html">NavigableFloatSet</a></code></td>
+								<td>Sepcialized NavigableSet interface for float value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.set.NavigableDoubleSet.html">NavigableDoubleSet</a></code></td>
+								<td>Sepcialized NavigableSet interface for double value.</td>
+							</tr>
+						</table>
+					</section>
+					<section class="A">
+						<h4>🛠️ Functional Interface</h4>
+						<table>
+							<tr>
+								<td><code><a href="api/primavera.map.IntMap.IntComparator.html">IntMap.IntComparator</a></code></td>
+								<td>Specialized Comparator for primitive value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.DoubleMap.DoubleComparator.html">DoubleMap.DoubleComparator</a></code></td>
+								<td>Specialized Comparator for primitive value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.map.LongMap.LongComparator.html">LongMap.LongComparator</a></code></td>
+								<td>Specialized Comparator for primitive value.</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.LongPentaFunction.html">LongPentaFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.ToDoubleTriFunction.html">ToDoubleTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.FloatTriFunction.html">FloatTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.ToLongTriFunction.html">ToLongTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.DoubleTriFunction.html">DoubleTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.IntPentaFunction.html">IntPentaFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.ToFloatTriFunction.html">ToFloatTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.LongTriFunction.html">LongTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.FloatTetraFunction.html">FloatTetraFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.DoublePentaFunction.html">DoublePentaFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.FloatPentaFunction.html">FloatPentaFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.LongTetraFunction.html">LongTetraFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.IntTriFunction.html">IntTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.ToIntTriFunction.html">ToIntTriFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.DoubleTetraFunction.html">DoubleTetraFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.function.IntTetraFunction.html">IntTetraFunction</a></code></td>
+								<td>no description</td>
+							</tr>
+						</table>
+					</section>
+					<section class="A">
+						<h4>🛠️ Class</h4>
+						<table>
+							<tr>
+								<td><code><a href="api/primavera.ring.DoubleRingBuffer.html">DoubleRingBuffer</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.ring.IntRingBuffer.html">IntRingBuffer</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.ring.LongRingBuffer.html">LongRingBuffer</a></code></td>
+								<td>no description</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.array.LongList.html">LongList</a></code></td>
+								<td>ArrayList</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.array.FloatList.html">FloatList</a></code></td>
+								<td>ArrayList</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.array.IntList.html">IntList</a></code></td>
+								<td>ArrayList</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.array.DoubleList.html">DoubleList</a></code></td>
+								<td>ArrayList</td>
+							</tr>
+							<tr>
+								<td><code><a href="api/primavera.ring.RingBuffer.html">RingBuffer</a></code></td>
+								<td>no description</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+			</div>
+		</article>
+		<aside class="O"></aside>
+		<footer class="M">
+			<p>Powered by <a href="https://github.com/teletha/evergarden" target="_">Evergarden</a></p>
+		</footer>
+	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
+</html>
