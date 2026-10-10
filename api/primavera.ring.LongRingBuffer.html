@@ -19,10 +19,10 @@
 		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="q">
-		<header class="Z" date="2026-10-09">
-			<h1 class="Y"><a href="index.html"><code>Primavera</code></a></h1>
-			<nav class="a"><a href="api/main.html" id="API"><svg class="package">
+	<body class="IB">
+		<header class="t" date="2026-10-10">
+			<h1 class="R"><a href="index.html"><code>Primavera</code></a></h1>
+			<nav class="L"><a href="api/main.html" id="API"><svg class="package">
 						<use href="main.svg#package"/>
 					</svg>
 				</a><a href="doc/changelog.html" id="Activity"><svg class="activity">
@@ -35,136 +35,136 @@
 						<use href="main.svg#github"/>
 					</svg>
 				</a></nav>
-			<div class="b"><a aria-label="Change color scheme" id="theme"><svg class="sun">
+			<div class="r"><a aria-label="Change color scheme" id="theme"><svg class="sun">
 						<use href="main.svg#sun"/>
 					</svg><svg class="moon">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<nav class="k"></nav>
-		<article class="W" id="Article">
-			<section class="LB"><code class="d">primavera.ring</code>
-				<h2 class="Class g"><code class="IB">LongRingBuffer</code></h2>
-				<div class="Q"></div>
+		<nav class="z"></nav>
+		<article class="HB" id="Article">
+			<section class="P"><code class="KB">primavera.ring</code>
+				<h2 class="Class j"><code class="k">LongRingBuffer</code></h2>
+				<div class="u"></div>
 			</section>
-			<section class="LB" id="LongRingBuffer(int)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">LongRingBuffer</code><code class="U">(<code>int</code><code class="parameterName">size</code>)</code></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="LongRingBuffer(int)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">LongRingBuffer</code><code class="i">(<code>int</code><code class="parameterName">size</code>)</code></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td><span><p>A fixed buffer size.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Create new buffer.</p></span></section>
-			<section class="LB" id="add(long)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">add</code><code class="U">(<code>long</code><code class="parameterName">item</code>)</code><i class="c"><code>long</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="add(long)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">add</code><code class="i">(<code>long</code><code class="parameterName">item</code>)</code><i class="Q"><code>long</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code>long</code><code class="parameterName">item</code></td>
 						<td><span><p>An item to add.</p></span></td>
 					</tr>
-					<tr class="t">
+					<tr class="CB">
 						<td><code>long</code></td>
 						<td><span><p>Removed item.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Add an item at tail.</p></span></section>
-			<section class="LB" id="latest()">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">latest</code><code class="U">()</code><i class="c"><code>long</code></i></h2>
-				<table class="P">
-					<tr class="t">
+			<section class="P" id="latest()">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">latest</code><code class="i">()</code><i class="Q"><code>long</code></i></h2>
+				<table class="EB">
+					<tr class="CB">
 						<td><code>long</code></td>
 						<td><span><p>A latest item.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Get the latest item.</p></span></section>
-			<section class="LB" id="forEach(java.util.function.LongConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEach</code><code class="U">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="forEach(java.util.function.LongConsumer)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">forEach</code><code class="i">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items.</p></span></section>
-			<section class="LB" id="forEach(int,java.util.function.LongConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEach</code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="forEach(int,java.util.function.LongConsumer)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">forEach</code><code class="i">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td></td>
 					</tr>
-					<tr class="l">
+					<tr class="p">
 						<td><code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items.</p></span></section>
-			<section class="LB" id="forEachFromLatest(java.util.function.LongConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEachFromLatest</code><code class="U">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="forEachFromLatest(java.util.function.LongConsumer)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">forEachFromLatest</code><code class="i">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items from latest.</p></span></section>
-			<section class="LB" id="forEachFromLatest(int,java.util.function.LongConsumer)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">forEachFromLatest</code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="c"><code>void</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="forEachFromLatest(int,java.util.function.LongConsumer)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">forEachFromLatest</code><code class="i">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="Q"><code>void</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code>int</code><code class="parameterName">size</code></td>
 						<td></td>
 					</tr>
-					<tr class="l">
+					<tr class="p">
 						<td><code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code></td>
 						<td></td>
 					</tr>
 				</table><span class="A"><p>Take all items from latest.</p></span></section>
-			<section class="LB" id="reduce(java.util.function.LongBinaryOperator)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">reduce</code><code class="U">(<code><a aria-label="java.util.function.LongBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="c"><code>long</code></i></h2>
-				<table class="P">
-					<tr class="l">
+			<section class="P" id="reduce(java.util.function.LongBinaryOperator)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">reduce</code><code class="i">(<code><a aria-label="java.util.function.LongBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="Q"><code>long</code></i></h2>
+				<table class="EB">
+					<tr class="p">
 						<td><code><a aria-label="java.util.function.LongBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></code><code class="parameterName">operator</code></td>
 						<td><span><p>The calculation.</p></span></td>
 					</tr>
-					<tr class="t">
+					<tr class="CB">
 						<td><code>long</code></td>
 						<td><span><p>The reduced result.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Reduce items.</p></span></section>
-			<section class="LB" id="to(java.lang.Object)">
-				<h2 class="e"><i class="PUBLIC"></i><code class="IB">to</code><code class="U">(<code>C</code><code class="parameterName">collection</code>)</code><i class="c"><code>C</code></i></h2>
-				<table class="P">
-					<tr class="m">
+			<section class="P" id="to(java.lang.Object)">
+				<h2 class="m"><i class="PUBLIC"></i><code class="k">to</code><code class="i">(<code>C</code><code class="parameterName">collection</code>)</code><i class="Q"><code>C</code></i></h2>
+				<table class="EB">
+					<tr class="v">
 						<td><code>C</code><code class="extends"><code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html">Collection</a><code class="parameters"><code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Long.html">Long</a></code></code></code></code></td>
 						<td><span><p>A collection type.</p></span></td>
 					</tr>
-					<tr class="l">
+					<tr class="p">
 						<td><code>C</code><code class="parameterName">collection</code></td>
 						<td><span><p>A target collection.</p></span></td>
 					</tr>
-					<tr class="t">
+					<tr class="CB">
 						<td><code>C</code></td>
 						<td><span><p>A recomposed collection.</p></span></td>
 					</tr>
 				</table><span class="A"><p>Recompose to the specified <code><a aria-label="java.util.Collection 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html">Collection</a></code>.</p></span></section>
 		</article>
-		<aside class="J">
-			<div class="FB">
-				<h5 class="HB">Constructors</h5>
+		<aside class="JB">
+			<div class="V">
+				<h5 class="n">Constructors</h5>
 				<ul>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#LongRingBuffer(int)">LongRingBuffer</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>)</code></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#LongRingBuffer(int)">LongRingBuffer</a></code><code class="i">(<code>int</code><code class="parameterName">size</code>)</code></li>
 				</ul>
-				<h5 class="HB">Methods</h5>
+				<h5 class="n">Methods</h5>
 				<ul>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#add(long)">add</a></code><code class="U">(<code>long</code><code class="parameterName">item</code>)</code><i class="O"><code>long</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#latest()">latest</a></code><code class="U">()</code><i class="O"><code>long</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEach(java.util.function.LongConsumer)">forEach</a></code><code class="U">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEach(int,java.util.function.LongConsumer)">forEach</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEachFromLatest(java.util.function.LongConsumer)">forEachFromLatest</a></code><code class="U">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEachFromLatest(int,java.util.function.LongConsumer)">forEachFromLatest</a></code><code class="U">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="O"><code>void</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#reduce(java.util.function.LongBinaryOperator)">reduce</a></code><code class="U">(<code><a aria-label="java.util.function.LongBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="O"><code>long</code></i></li>
-					<li class="GB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#to(java.lang.Object)">to</a></code><code class="U">(<code>C</code><code class="parameterName">collection</code>)</code><i class="O"><code>C</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#add(long)">add</a></code><code class="i">(<code>long</code><code class="parameterName">item</code>)</code><i class="X"><code>long</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#latest()">latest</a></code><code class="i">()</code><i class="X"><code>long</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEach(java.util.function.LongConsumer)">forEach</a></code><code class="i">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="X"><code>void</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEach(int,java.util.function.LongConsumer)">forEach</a></code><code class="i">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="X"><code>void</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEachFromLatest(java.util.function.LongConsumer)">forEachFromLatest</a></code><code class="i">(<code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="X"><code>void</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#forEachFromLatest(int,java.util.function.LongConsumer)">forEachFromLatest</a></code><code class="i">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.util.function.LongConsumer 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongConsumer.html">LongConsumer</a></code><code class="parameterName">consumer</code>)</code><i class="X"><code>void</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#reduce(java.util.function.LongBinaryOperator)">reduce</a></code><code class="i">(<code><a aria-label="java.util.function.LongBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></code><code class="parameterName">operator</code>)</code><i class="X"><code>long</code></i></li>
+					<li class="FB"><i class="PUBLIC"></i><code><a href="api/primavera.ring.LongRingBuffer.html#to(java.lang.Object)">to</a></code><code class="i">(<code>C</code><code class="parameterName">collection</code>)</code><i class="X"><code>C</code></i></li>
 				</ul>
 			</div>
 		</aside>
-		<footer class="r">
+		<footer class="J">
 			<p>Powered by <a href="https://github.com/teletha/evergarden" target="_">Evergarden</a></p>
 		</footer>
 	</body>
